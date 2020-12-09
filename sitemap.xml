@@ -19,12 +19,12 @@
   
   <url>
     <loc>https://www.deltablog.xyz/categories/</loc>
-    <lastmod>2020-12-09T20:37:50+08:00</lastmod>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/categories/coding/</loc>
-    <lastmod>2020-12-09T20:37:50+08:00</lastmod>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
   </url>
   
   <url>
@@ -39,12 +39,12 @@
   
   <url>
     <loc>https://www.deltablog.xyz/posts/</loc>
-    <lastmod>2020-12-09T20:37:50+08:00</lastmod>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/tags/</loc>
-    <lastmod>2020-12-09T20:37:50+08:00</lastmod>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
   </url>
   
   <url>
@@ -58,8 +58,28 @@
   </url>
   
   <url>
+    <loc>https://www.deltablog.xyz/posts/coding%E9%9A%8F%E6%83%B3%E6%8B%BE%E9%81%97/</loc>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/cppreference/</loc>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.deltablog.xyz/tags/cc&#43;&#43;/</loc>
-    <lastmod>2020-12-09T20:32:31+08:00</lastmod>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/problems/</loc>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/stackoverflow/</loc>
+    <lastmod>2020-12-09T21:35:47+08:00</lastmod>
   </url>
   
   <url>
@@ -173,27 +193,7 @@
   </url>
   
   <url>
-    <loc>https://www.deltablog.xyz/posts/coding%E9%9A%8F%E6%83%B3%E6%8B%BE%E9%81%97/</loc>
-    <lastmod>2020-12-09T20:30:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/cppreference/</loc>
-    <lastmod>2020-12-09T20:30:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/categories/problems/</loc>
-    <lastmod>2020-12-09T20:30:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.deltablog.xyz/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/stackoverflow/</loc>
-    <lastmod>2020-12-09T20:30:35+08:00</lastmod>
   </url>
   
 </urlset>
