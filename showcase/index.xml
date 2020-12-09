@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Showcase overview on Delta&#39;s Blog</title>
+    <link>https://www.deltablog.xyz/showcase/</link>
+    <description>Recent content in Showcase overview on Delta&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
+    <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 19 Jan 2020 15:43:38 +0900</lastBuildDate>
+    
+        <atom:link href="https://www.deltablog.xyz/showcase/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Hugo</title>
+        <link>https://www.deltablog.xyz/showcase/hugo/</link>
+        <pubDate>Sun, 19 Jan 2020 21:04:11 +0900</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Tue, 08 Dec 2020 23:17:48 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/showcase/hugo/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

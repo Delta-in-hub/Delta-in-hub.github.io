@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Tags on Delta&#39;s Blog</title>
+    <link>https://www.deltablog.xyz/tags/</link>
+    <description>Recent content in Tags on Delta&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
+    <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 08 Dec 2020 13:25:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.deltablog.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Hexo</title>
+        <link>https://www.deltablog.xyz/tags/hexo/</link>
+        <pubDate>Tue, 08 Dec 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/hexo/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Hugo</title>
+        <link>https://www.deltablog.xyz/tags/hugo/</link>
+        <pubDate>Tue, 08 Dec 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/hugo/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>C|C&#43;&#43;</title>
+        <link>https://www.deltablog.xyz/tags/cc&#43;&#43;/</link>
+        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/cc&#43;&#43;/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>PTA</title>
+        <link>https://www.deltablog.xyz/tags/pta/</link>
+        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/pta/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Regex</title>
+        <link>https://www.deltablog.xyz/tags/regex/</link>
+        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/regex/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>严蔚敏</title>
+        <link>https://www.deltablog.xyz/tags/%E4%B8%A5%E8%94%9A%E6%95%8F/</link>
+        <pubDate>Sun, 13 Sep 2020 22:54:59 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/%E4%B8%A5%E8%94%9A%E6%95%8F/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>邓俊辉</title>
+        <link>https://www.deltablog.xyz/tags/%E9%82%93%E4%BF%8A%E8%BE%89/</link>
+        <pubDate>Sun, 13 Sep 2020 22:54:59 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/%E9%82%93%E4%BF%8A%E8%BE%89/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CppReference</title>
+        <link>https://www.deltablog.xyz/tags/cppreference/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/cppreference/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Stackoverflow</title>
+        <link>https://www.deltablog.xyz/tags/stackoverflow/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/stackoverflow/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>PTA on Delta&#39;s Blog</title>
+    <link>https://www.deltablog.xyz/tags/pta/</link>
+    <description>Recent content in PTA on Delta&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
+    <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Nov 2020 13:25:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.deltablog.xyz/tags/pta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>正则表达式</title>
+        <link>https://www.deltablog.xyz/posts/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Wed, 09 Dec 2020 20:32:31 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+        <description>正则表达式 正则表达式 In C++11 推荐学习视频,[C++ 11 Library: Regular Expression系列](C++ 11 Library: Regular Expression - YouTube),一共三个视频,老师口音非常</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+            
+              <category>Regex</category>
+            
+          
+            
+              <category>PTA</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>OJ</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>二叉搜索树BinarySearchTree</title>
+        <link>https://www.deltablog.xyz/posts/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-bst/</link>
+        <pubDate>Sun, 05 Apr 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Wed, 09 Dec 2020 15:45:12 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-bst/</guid>
+        <description>二叉搜索树 定义 二叉查找树（英语：Binary Search Tree），也称为二叉搜索树、有序二叉树（ordered binary tree）或排序二叉树（sorted</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+            
+              <category>PTA</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Data Structure</category>
+            
+          
+            
+              <category>Algorithm</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

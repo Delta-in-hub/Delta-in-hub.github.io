@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>OJ on Delta&#39;s Blog</title>
+    <link>https://www.deltablog.xyz/categories/oj/</link>
+    <description>Recent content in OJ on Delta&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
+    <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Nov 2020 13:25:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.deltablog.xyz/categories/oj/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>正则表达式</title>
+        <link>https://www.deltablog.xyz/posts/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Wed, 09 Dec 2020 20:32:31 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+        <description>正则表达式 正则表达式 In C++11 推荐学习视频,[C++ 11 Library: Regular Expression系列](C++ 11 Library: Regular Expression - YouTube),一共三个视频,老师口音非常</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+            
+              <category>Regex</category>
+            
+          
+            
+              <category>PTA</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>OJ</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>大一做的一些水题</title>
+        <link>https://www.deltablog.xyz/posts/%E5%A4%A7%E4%B8%80%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B0%B4%E9%A2%98/</link>
+        <pubDate>Fri, 14 Feb 2020 18:18:46 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Wed, 09 Dec 2020 15:38:46 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E5%A4%A7%E4%B8%80%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B0%B4%E9%A2%98/</guid>
+        <description>大一做的一些水题 L2-4 部落 在一个社区里，每个人都有自己的小圈子，还可能同时属于很多不同的朋友圈。我们认为朋友的朋友都算在一个部落里，于是要请你统</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>OJ</category>
+            
+          
+            
+              <category>ACM</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

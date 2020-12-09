@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Categories on Delta&#39;s Blog</title>
+    <link>https://www.deltablog.xyz/categories/</link>
+    <description>Recent content in Categories on Delta&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
+    <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 08 Dec 2020 13:25:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.deltablog.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Blog</title>
+        <link>https://www.deltablog.xyz/categories/blog/</link>
+        <pubDate>Tue, 08 Dec 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/blog/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Coding</title>
+        <link>https://www.deltablog.xyz/categories/coding/</link>
+        <pubDate>Tue, 08 Dec 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/coding/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>OJ</title>
+        <link>https://www.deltablog.xyz/categories/oj/</link>
+        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/oj/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Algorithm</title>
+        <link>https://www.deltablog.xyz/categories/algorithm/</link>
+        <pubDate>Sun, 13 Sep 2020 22:54:59 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/algorithm/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Data Structure</title>
+        <link>https://www.deltablog.xyz/categories/data-structure/</link>
+        <pubDate>Sun, 13 Sep 2020 22:54:59 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/data-structure/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>ACM</title>
+        <link>https://www.deltablog.xyz/categories/acm/</link>
+        <pubDate>Wed, 05 Aug 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/acm/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Vjudge</title>
+        <link>https://www.deltablog.xyz/categories/vjudge/</link>
+        <pubDate>Wed, 05 Aug 2020 13:25:00 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/vjudge/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Problems</title>
+        <link>https://www.deltablog.xyz/categories/problems/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/problems/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
