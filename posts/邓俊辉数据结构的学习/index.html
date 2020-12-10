@@ -1329,7 +1329,7 @@
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
 <meta name="created" content="2020-09-13T22:54:59&#43;0800">
-<meta name="modified" content="2020-12-10T19:39:22&#43;0800">
+<meta name="modified" content="2020-12-10T21:59:56&#43;0800">
 <meta property="article:published_time" content="2020-09-13T22:54:59&#43;0800">
 
 <meta name="author" content="Delta">
@@ -1378,7 +1378,7 @@
     "@type": "WebPage",
     "headline": "数据结构的学习",
     "datePublished": "2020-09-13T22:54:59+08:00",
-    "dateModified": "2020-12-10T19:39:22+08:00",
+    "dateModified": "2020-12-10T21:59:56+08:00",
     "url" : "https://www.deltablog.xyz/posts/%E9%82%93%E4%BF%8A%E8%BE%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0/",
     "description": "数据结构 第一章 绪论 $1+\\lfloor log_2n \\rfloor $为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之后",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -1715,7 +1715,7 @@
   
   &nbsp;&middot;&nbsp; <time class="single__info" title="更新日期"> 📝&nbsp;2020年12月10日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;11&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;12&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -2334,13 +2334,46 @@
 </ol>
 <h2 id="第七章-查找-严蔚敏版">第七章 查找 (严蔚敏版)</h2>
 <ol>
-<li>顺序查找 $ASL = \frac{1}{n} \sum_{i=1}^{n}{i} = \frac{n+1}{2}$</li>
-<li>二分(折半)查找
+<li>
+<p>顺序查找 $ASL = \frac{1}{n} \sum_{i=1}^{n}{i} = \frac{n+1}{2}$</p>
+</li>
+<li>
+<p>二分(折半)查找</p>
 <ol>
 <li>$ASL = \frac{n+1}{n}log_2(n+1) - 1$</li>
-<li>
-<h2 id="lower_boundupper_boundbinarysearch代码实现---可参照cppreference中的实现httpszhcppreferencecomwcppalgorithmlower_bound"><a href="">lower_bound,upper_bound,binarySearch代码实现</a> , 可参照<a href="https://zh.cppreference.com/w/cpp/algorithm/lower_bound">CppReference中的实现</a></h2>
+<li><a href="https://gist.github.com/Delta-in-hub/b8b28db5ba3eb436223235366cbfd1f2">lower_bound,upper_bound,binarySearch代码实现</a> , 可参照<a href="https://zh.cppreference.com/w/cpp/algorithm/lower_bound">CppReference中的实现</a>
+<ul>
+<li>二分想着很简单,但要是Bug Free的实现没那么简单<code>lower/upper_bound</code>这俩兄弟容易把人写懵😵最开始<code>end</code>指向数组尾的下一个元素,为了在没找到<code>tar</code>时返回数组尾下一个位置.当<code>*mid</code>元素非法时,修改<code>begin</code>.反之,修改<code>end</code>.直到<code>begin</code>和<code>end</code>重合,即为目标位置. 这里的<em>非法</em>指我们找的元素一定不在<code>mid</code>之前,我们就可以把<code>mid</code>之前的元素直接排除掉,令<code>begin= mid + 1</code>.当<code>*mid</code>元素合法时,即符合我们的搜索条件,因为我们要找到时第一个符合条件位置,因此<code>mid</code>之后的元素都不用考虑了,故修改<code>end = mid</code>. 记住三点,      1. 最开始<code>end</code>指向数组尾下一个元素  2. 始终将<code>target</code>控制在[<code>begin</code>,<code>end</code>]之内  3.我们要找的的第一个符合条件的元素.以此去理解<code>end</code>的变化</li>
+<li><code>binary_search</code>实现只需要调用<code>lower_bound</code>,判断返回指针是否是合法地址<code>&amp;&amp;</code>指向元素是否等于<code>target</code>即可.</li>
+</ul>
 </li>
+</ol>
+</li>
+<li>
+<p>分块查找</p>
+<ol>
+<li>要求表本身分块有序,即下一个子表中的最小值大于当前子表最大值.</li>
+<li>由此建立索引表,要对索引表进行排序.</li>
+</ol>
+</li>
+<li>
+<p>二叉搜索树</p>
+<ol>
+<li><a href="https://www.deltablog.xyz/posts/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-bst/">https://www.deltablog.xyz/posts/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-bst/</a></li>
+<li>$ASL = \frac{n+1}{2},n为树的高度$ 最坏情况下与顺序查找相同.</li>
+<li>节点的删除
+<ol>
+<li>左子树上的值小于根节点,右子树的值大于根节点</li>
+<li>当删除节点左右子树都存在时,找其左子树中最大的节点或者右子树中最小的节点代替当前节点即可.</li>
+<li><a href="https://gist.github.com/Delta-in-hub/69e09734070de9a07e381d73ce5502c9">代码实现</a>  &hellip;  写的一点也不好,罗里吧嗦&hellip;但至少能跑了,没发现bug</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>平衡二叉树</p>
+<ol>
+<li></li>
 </ol>
 </li>
 </ol>
@@ -2978,7 +3011,6 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#第五章-二叉树">第五章 二叉树</a></li>
     <li><a href="#第六章-图">第六章 图</a></li>
     <li><a href="#第七章-查找-严蔚敏版">第七章 查找 (严蔚敏版)</a></li>
-    <li><a href="#lower_boundupper_boundbinarysearch代码实现---可参照cppreference中的实现httpszhcppreferencecomwcppalgorithmlower_bound"><a href="">lower_bound,upper_bound,binarySearch代码实现</a> , 可参照<a href="https://zh.cppreference.com/w/cpp/algorithm/lower_bound">CppReference中的实现</a></a></li>
   </ul>
 </nav>
   </div>
