@@ -1329,7 +1329,7 @@
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
 <meta name="created" content="2020-09-13T22:54:59&#43;0800">
-<meta name="modified" content="2020-12-10T12:17:44&#43;0800">
+<meta name="modified" content="2020-12-10T13:37:24&#43;0800">
 <meta property="article:published_time" content="2020-09-13T22:54:59&#43;0800">
 
 <meta name="author" content="Delta">
@@ -1378,7 +1378,7 @@
     "@type": "WebPage",
     "headline": "数据结构的学习",
     "datePublished": "2020-09-13T22:54:59+08:00",
-    "dateModified": "2020-12-10T12:17:44+08:00",
+    "dateModified": "2020-12-10T13:37:24+08:00",
     "url" : "https://www.deltablog.xyz/posts/%E9%82%93%E4%BF%8A%E8%BE%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0/",
     "description": "数据结构 第一章 绪论 $1+\\lfloor log_2n \\rfloor $为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之后",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -2301,13 +2301,15 @@
 <ol>
 <li>强连通图 : 在有向图G中，如果两个顶点间至少存在一条互相可达路径，称两个顶点强连通(strongly connected)。如果有向图G的每两个顶点都强连通，称G是一个强连通图。</li>
 <li>强连通分量 : 非强连通图有向图的极大强连通子图，称为强连通分量(strongly connected components)。</li>
-<li>十字链表 与 邻接多重表</li>
+<li><strong>十字链表 与 邻接多重表</strong></li>
 <li>深度优先生成树 与 广度优先生成树</li>
-<li>最小生成树<br />
+<li>最小生成树(本质都是贪心)<br />
 1. Prim算法<br />
 -   <a href="https://gist.github.com/Delta-in-hub/6b6ff9aa5e23a74d36ebaa1d68799a53">基于邻接矩阵的图</a> 时间复杂度$O(|V|^2)$<br />
--   <a href="Prim+priority_queue">基于邻接表的图 + 二叉堆优化</a> 时间复杂度$O(|E|log|V|)$<br />
-2. Kruskal算法</li>
+-   因为时间复杂度与$|E|$无关,适用于求稠密网的最小生成树<br />
+-   <a href="https://www.deltablog.xyz/posts/%25E5%259F%25BA%25E7%25A1%2580%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584/#g---%E7%95%85%E9%80%9A%E5%B7%A5%E7%A8%8B%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91">基于邻接表的图 + 二叉堆优化</a> 时间复杂度$O(|E|log|V|)$<br />
+2. Kruskal算法  使用堆排序时间复杂度$O(|E|log_2|E|)$<br />
+-   更适用于求稀疏网的最小生成树</li>
 <li>最短路
 <ol>
 <li>Dijkstra</li>
@@ -2315,8 +2317,19 @@
 </ol>
 </li>
 <li>关键路径  这东西不就是个最长路嘛?</li>
+<li></li>
 </ol>
 <h2 id="第七章-查找-严蔚敏版">第七章 查找 (严蔚敏版)</h2>
+<ol>
+<li>顺序查找 $ASL = \frac{1}{n} \sum_{i=1}^{n}{i} = \frac{n+1}{2}$</li>
+<li>二分(折半)查找
+<ol>
+<li>$ASL = \frac{n+1}{n}log_2(n+1) - 1$</li>
+<li><a href="">lower_bound,upper_bound,binarySearch代码实现</a> , 可参照<a href="https://zh.cppreference.com/w/cpp/algorithm/lower_bound">CppReference中的实现</a>与<a href="https://www.zhihu.com/question/36132386/answer/66089177">二分查找有几种写法？它们的区别是什么？ - 知乎 </a></li>
+<li></li>
+</ol>
+</li>
+</ol>
 
     </article>
     

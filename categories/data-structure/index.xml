@@ -27,7 +27,7 @@
         <link>https://www.deltablog.xyz/posts/%E9%82%93%E4%BF%8A%E8%BE%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Sun, 13 Sep 2020 22:54:59 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Thu, 10 Dec 2020 12:17:44 +0800</atom:modified>
+        <atom:modified>Thu, 10 Dec 2020 13:37:24 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/%E9%82%93%E4%BF%8A%E8%BE%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
         <description>数据结构 第一章 绪论 $1+\lfloor log_2n \rfloor $为n二进制展开的位数 , 同理 $1+\lfloor \ln10\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之后</description>
         
