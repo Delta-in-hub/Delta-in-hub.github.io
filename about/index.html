@@ -1723,10 +1723,10 @@ if (!doNotTrack) {
     var dollarCodeElem = document.querySelectorAll('div.language-\\$');
     var gtCodeElem = document.querySelectorAll('div.language-\\>');
 
-    var makeClipboard = function(elem) {
+    var makeClipboard = function (elem) {
       var code = elem,
-          text = elem.textContent;
-        
+        text = elem.textContent;
+
       if (text.length > 15) {
         if (!clipInit) {
           var text, clip = new ClipboardJS('.copy-to-clipboard', {
@@ -1783,40 +1783,40 @@ if (!doNotTrack) {
       }
     }
 
-    var makeSymbolClipboard = function(elem) {
+    var makeSymbolClipboard = function (elem) {
       var clipboardSpan = document.createElement('span');
       clipboardSpan.setAttribute('class', 'copy-to-clipboard');
       clipboardSpan.setAttribute('title', 'Copy to clipboard');
       elem.parentNode.parentNode.insertBefore(clipboardSpan, elem.parentNode.nextElementSibling);
     }
 
-    preChromaElem ? 
-    preChromaElem.forEach(function(elem) {
-      elem.querySelectorAll('code').forEach(function(codeElem) {
-        makeClipboard(codeElem);
-      });
-    }) : null;
-    
-    langCodeElem ? 
-    langCodeElem.forEach(function(elem) {
-      elem.querySelectorAll('code').forEach(function (codeElem) {
-        makeClipboard(codeElem);
-      });
-    }) : null;
+    preChromaElem ?
+      preChromaElem.forEach(function (elem) {
+        elem.querySelectorAll('code').forEach(function (codeElem) {
+          makeClipboard(codeElem);
+        });
+      }) : null;
 
-    dollarCodeElem ? 
-    dollarCodeElem.forEach(function(elem) {
-      elem.querySelectorAll('code').forEach(function (codeElem) {
-        makeSymbolClipboard(codeElem);
-      });
-    }) : null;
+    langCodeElem ?
+      langCodeElem.forEach(function (elem) {
+        elem.querySelectorAll('code').forEach(function (codeElem) {
+          makeClipboard(codeElem);
+        });
+      }) : null;
+
+    dollarCodeElem ?
+      dollarCodeElem.forEach(function (elem) {
+        elem.querySelectorAll('code').forEach(function (codeElem) {
+          makeSymbolClipboard(codeElem);
+        });
+      }) : null;
 
     gtCodeElem ?
-    gtCodeElem.forEach(function(elem) {
-      elem.querySelectorAll('code').forEach(function (codeElem) {
-        makeSymbolClipboard(codeElem);
-      });
-    }) : null;
+      gtCodeElem.forEach(function (elem) {
+        elem.querySelectorAll('code').forEach(function (codeElem) {
+          makeSymbolClipboard(codeElem);
+        });
+      }) : null;
     
   });
 </script>

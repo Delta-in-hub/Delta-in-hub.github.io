@@ -24,11 +24,11 @@
       
       <item>
         <title>正则表达式</title>
-        <link>https://www.deltablog.xyz/posts/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+        <link>https://www.deltablog.xyz/posts/regex/</link>
         <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 20:32:31 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+        <guid>https://www.deltablog.xyz/posts/regex/</guid>
         <description>正则表达式 正则表达式 In C++11 推荐学习视频,[C++ 11 Library: Regular Expression系列](C++ 11 Library: Regular Expression - YouTube),一共三个视频,老师口音非常</description>
         
         <dc:creator>Delta</dc:creator>

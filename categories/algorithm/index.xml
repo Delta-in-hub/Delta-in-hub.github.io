@@ -24,11 +24,11 @@
       
       <item>
         <title>数据结构的学习</title>
-        <link>https://www.deltablog.xyz/posts/%E9%82%93%E4%BF%8A%E8%BE%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+        <link>https://www.deltablog.xyz/posts/datastructure/</link>
         <pubDate>Sun, 13 Sep 2020 22:54:59 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Thu, 10 Dec 2020 21:59:56 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/%E9%82%93%E4%BF%8A%E8%BE%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>https://www.deltablog.xyz/posts/datastructure/</guid>
         <description>数据结构 第一章 绪论 $1+\lfloor log_2n \rfloor $为n二进制展开的位数 , 同理 $1+\lfloor \ln10\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之后</description>
         
         <dc:creator>Delta</dc:creator>
@@ -70,11 +70,11 @@
       
       <item>
         <title>二叉搜索树BinarySearchTree</title>
-        <link>https://www.deltablog.xyz/posts/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-bst/</link>
+        <link>https://www.deltablog.xyz/posts/binarysearchtree/</link>
         <pubDate>Sun, 05 Apr 2020 13:25:00 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 15:45:12 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-bst/</guid>
+        <guid>https://www.deltablog.xyz/posts/binarysearchtree/</guid>
         <description>二叉搜索树 定义 二叉查找树（英语：Binary Search Tree），也称为二叉搜索树、有序二叉树（ordered binary tree）或排序二叉树（sorted</description>
         
         <dc:creator>Delta</dc:creator>
