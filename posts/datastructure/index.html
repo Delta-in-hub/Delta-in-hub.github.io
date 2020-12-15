@@ -1329,7 +1329,7 @@
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
 <meta name="created" content="2020-09-13T22:54:59&#43;0800">
-<meta name="modified" content="2020-12-15T23:30:18&#43;0800">
+<meta name="modified" content="2020-12-15T23:36:24&#43;0800">
 <meta property="article:published_time" content="2020-09-13T22:54:59&#43;0800">
 
 <meta name="author" content="Delta">
@@ -1378,7 +1378,7 @@
     "@type": "WebPage",
     "headline": "数据结构的学习",
     "datePublished": "2020-09-13T22:54:59+08:00",
-    "dateModified": "2020-12-15T23:30:18+08:00",
+    "dateModified": "2020-12-15T23:36:24+08:00",
     "url" : "https://www.deltablog.xyz/posts/datastructure/",
     "description": "数据结构 第一章 绪论 $ 1+\\lfloor log_2n \\rfloor $ 为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -2558,9 +2558,17 @@ if (!doNotTrack) {
 </ol>
 </li>
 <li>
-<p><a href="https://gist.github.com/Delta-in-hub/19df96c6da9c298359a3dcaa4f202418">real_avl代码实现</a> .重写了avl,性能有了正常水平. <code>inserting [0,1e7) to avl tree costs 1260 ms.</code> 和上面相比,快了4个数量级.<code>inserting [0,1e8) to avl tree costs 15743 ms.</code><br />
-7.</p>
+<p><a href="https://gist.github.com/Delta-in-hub/19df96c6da9c298359a3dcaa4f202418">real_avl代码实现</a> .重写了avl,性能有了正常水平. <code>inserting [0,1e7) to avl tree costs 1260 ms.</code> 和上面相比,快了4个数量级.</p>
 </li>
+<li>
+<pre><code>    inserting [0,100000000) to avl tree costs 14349 ms.
+    inserting [0,100000000) to std::set&lt;int&gt; costs 20650 ms.
+    ```
+    
+        
+    
+</code></pre></li>
+<li></li>
 </ol>
 
     </article>
