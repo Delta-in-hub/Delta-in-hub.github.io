@@ -4667,6 +4667,7 @@ Inconsistency found after xxx relations.  //条件矛盾,既有向图成环
   
 </script>
     
+
     
     
 
@@ -5204,6 +5205,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script defer src="/js/helper/fadeinout.min.js"></script>
 
+<script defer src="/js/helper/throttle.min.js"></script>
+
 
 
 
@@ -5457,6 +5460,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }) : null;
     }
     
+    
+    
+    
+    
+    var topOffset = 120;
+    var botOffset = 70;
+    var handleWindowResize = function () {
+      if (tocElem) {
+        tocElem.style.maxHeight = (window.innerHeight - topOffset - botOffset) + 'px';
+      }
+    }
+    var throttledWindowResize = throttle(handleWindowResize, 300);
+    throttledWindowResize()
+
+    
+    window.addEventListener('resize', throttledWindowResize);
+    
 
 
 
@@ -5475,7 +5495,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var newElemOuter = document.createElement('span');
       newElemOuter.classList.add('anchor');
       newElemOuter.classList.add('hide');
-      newElemOuter.setAttribute('data-clipboard-text', link);
+      newElemOuter.setAttribute('data-clipboard-text', decodeURI(link));
       newElemOuter.style.position = 'relative';
 
       var newElemInner = document.createElement('span');
