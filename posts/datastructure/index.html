@@ -1329,7 +1329,7 @@
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
 <meta name="created" content="2020-09-13T22:54:59&#43;0800">
-<meta name="modified" content="2020-12-15T23:36:24&#43;0800">
+<meta name="modified" content="2020-12-17T00:04:31&#43;0800">
 <meta property="article:published_time" content="2020-09-13T22:54:59&#43;0800">
 
 <meta name="author" content="Delta">
@@ -1378,7 +1378,7 @@
     "@type": "WebPage",
     "headline": "数据结构的学习",
     "datePublished": "2020-09-13T22:54:59+08:00",
-    "dateModified": "2020-12-15T23:36:24+08:00",
+    "dateModified": "2020-12-17T00:04:31+08:00",
     "url" : "https://www.deltablog.xyz/posts/datastructure/",
     "description": "数据结构 第一章 绪论 $ 1+\\lfloor log_2n \\rfloor $ 为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -1724,7 +1724,7 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2020年09月13日 </time>
   
-  &nbsp;&middot;&nbsp; <time class="single__info" title="更新日期"> 📝&nbsp;2020年12月15日 </time>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="更新日期"> 📝&nbsp;2020年12月17日 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;13&nbsp;分钟 </span>
   
@@ -2550,24 +2550,37 @@ if (!doNotTrack) {
 <li>
 <p>平衡二叉树</p>
 <ol>
-<li>等价二叉搜索树:&ldquo;上下可变,左右不乱&rdquo;.</li>
-<li>高度为<code>h</code>的AVL树至少包含$fib(h+3)-1 $个节点.(本书单节点子树高度取0)</li>
-<li><a href="https://www.cs.usfca.edu/~galles/visualization/AVLtree.html">AVL树插入删除可视化</a></li>
-<li><a href="https://juejin.cn/post/6844904006033080333">平衡二叉树(AVL)原理解析与实现（C++）</a> 看这个自己实现一遍就会了.</li>
-<li><a href="https://gist.github.com/Delta-in-hub/64669eec84ea4bf96a7912a9226bd566">avl代码实现</a> 写法很简洁,适合理解,但是性能很差. <code>inserting [0,1.7e3) to avl tree costs 1265 ms.</code></li>
-</ol>
+<li>
+<p>等价二叉搜索树:&ldquo;上下可变,左右不乱&rdquo;.</p>
+</li>
+<li>
+<p>高度为<code>h</code>的AVL树至少包含$fib(h+3)-1 $个节点.(本书单节点子树高度取0)</p>
+</li>
+<li>
+<p><a href="https://www.cs.usfca.edu/~galles/visualization/AVLtree.html">AVL树插入删除可视化</a></p>
+</li>
+<li>
+<p><a href="https://juejin.cn/post/6844904006033080333">平衡二叉树(AVL)原理解析与实现（C++）</a> 看这个自己实现一遍就会了.</p>
+</li>
+<li>
+<p><a href="https://gist.github.com/Delta-in-hub/64669eec84ea4bf96a7912a9226bd566">avl代码实现</a> 写法很简洁,适合理解,但是性能很差. <code>inserting [0,1.7e3) to avl tree costs 1265 ms.</code></p>
 </li>
 <li>
 <p><a href="https://gist.github.com/Delta-in-hub/19df96c6da9c298359a3dcaa4f202418">real_avl代码实现</a> .重写了avl,性能有了正常水平. <code>inserting [0,1e7) to avl tree costs 1260 ms.</code> 和上面相比,快了4个数量级.</p>
 </li>
 <li>
-<pre><code>    inserting [0,100000000) to avl tree costs 14349 ms.
-    inserting [0,100000000) to std::set&lt;int&gt; costs 20650 ms.
-    ```
-    
-        
-    
+<pre><code>inserting [0,100000000) to avl tree costs 14349 ms.
+inserting [0,100000000) to std::set&lt;int&gt; costs 20650 ms.
 </code></pre></li>
+<li>
+<p>重写的avl树删除部分没有写,今天重新写,写了一天总是有bug,一定要远离双重指针,很难玩明白.</p>
+</li>
+<li>
+<p>睡觉前把双重指针全都改掉了,用返回值代替,改了5分钟,改好了.我以后一定远离双重指针,真的用不利索.双重指针太可怕了太可怕了太可怕了.😭😭😭</p>
+</li>
+</ol>
+</li>
+<li></li>
 <li></li>
 </ol>
 
