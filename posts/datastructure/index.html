@@ -1329,7 +1329,7 @@
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
 <meta name="created" content="2020-09-13T22:54:59&#43;0800">
-<meta name="modified" content="2020-12-17T00:04:31&#43;0800">
+<meta name="modified" content="2020-12-17T11:51:22&#43;0800">
 <meta property="article:published_time" content="2020-09-13T22:54:59&#43;0800">
 
 <meta name="author" content="Delta">
@@ -1378,7 +1378,7 @@
     "@type": "WebPage",
     "headline": "数据结构的学习",
     "datePublished": "2020-09-13T22:54:59+08:00",
-    "dateModified": "2020-12-17T00:04:31+08:00",
+    "dateModified": "2020-12-17T11:51:22+08:00",
     "url" : "https://www.deltablog.xyz/posts/datastructure/",
     "description": "数据结构 第一章 绪论 $ 1+\\lfloor log_2n \\rfloor $ 为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -1726,7 +1726,7 @@ if (!doNotTrack) {
   
   &nbsp;&middot;&nbsp; <time class="single__info" title="更新日期"> 📝&nbsp;2020年12月17日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;13&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;14&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -2551,7 +2551,7 @@ if (!doNotTrack) {
 <p>平衡二叉树</p>
 <ol>
 <li>
-<p>等价二叉搜索树:&ldquo;上下可变,左右不乱&rdquo;.</p>
+<p>等价二叉搜索树:&ldquo;上下可变,左右不乱&rdquo;,由此可以理解平衡二叉树为什么正确.</p>
 </li>
 <li>
 <p>高度为<code>h</code>的AVL树至少包含$fib(h+3)-1 $个节点.(本书单节点子树高度取0)</p>
@@ -2563,25 +2563,61 @@ if (!doNotTrack) {
 <p><a href="https://juejin.cn/post/6844904006033080333">平衡二叉树(AVL)原理解析与实现（C++）</a> 看这个自己实现一遍就会了.</p>
 </li>
 <li>
-<p><a href="https://gist.github.com/Delta-in-hub/64669eec84ea4bf96a7912a9226bd566">avl代码实现</a> 写法很简洁,适合理解,但是性能很差. <code>inserting [0,1.7e3) to avl tree costs 1265 ms.</code></p>
+<p><a href="https://gist.github.com/Delta-in-hub/64669eec84ea4bf96a7912a9226bd566">avl代码实现</a> 写法很简洁,适合理解,但是性能非常的差. <code>inserting [0,1.7e3) to avl tree costs 1265 ms.</code></p>
 </li>
 <li>
-<p><a href="https://gist.github.com/Delta-in-hub/19df96c6da9c298359a3dcaa4f202418">real_avl代码实现</a> .重写了avl,性能有了正常水平. <code>inserting [0,1e7) to avl tree costs 1260 ms.</code> 和上面相比,快了4个数量级.</p>
+<p><a href="https://gist.github.com/Delta-in-hub/19df96c6da9c298359a3dcaa4f202418">real_avl代码实现</a> .重写了avl,性能有了正常水平.</p>
+<ol>
+<li>重写的avl树删除部分没有写,今天重新写,写了一天总是有bug,一定要远离双重指针,很难玩明白.</li>
+<li>睡觉前把双重指针全都改掉了,用返回值代替,改了5分钟,改好了.我以后一定远离双重指针,真的用不利索.双重指针太可怕了太可怕了太可怕了.😭😭</li>
+<li>插入部分,当插入节点有兄弟时,是可以不用更新高度的.</li>
+<li>删除部分,需要删除的节点有三种情况 1.是叶节点  2.度为2  3.度为1  ,2/3情况利用直接前继/后继可以转化为1.特别注意,每删除一个节点,都需要更新高度,若找到最小不平衡子树,要重新平衡,这点和插入不同.也就是说每次删除都要从叶节点溯源到根节点,这也解释了删除性能较<code>std::set</code>差的原因.</li>
+<li>删除这部分等考完试好好写写,网上的教程删除逻辑弄得很复杂,一点也不优雅. 其实就一个<code>if else</code>足矣.</li>
+</ol>
 </li>
 <li>
-<pre><code>inserting [0,100000000) to avl tree costs 14349 ms.
-inserting [0,100000000) to std::set&lt;int&gt; costs 20650 ms.
+<p><a href="https://gist.github.com/Delta-in-hub/a12f50e91e5023d587667810869d4b47">avl树和std::set性能对比</a></p>
+<ol>
+<li>
+<pre><code>inserting [0,1e5) to avl needs 6.79 ms.
+inserting [0,1e5) to std::set needs 8.17 ms.
+            
+finding [0,1e5) from avl needs 3.10 ms.
+finding [0,1e5) from set::set needs 6.11 ms.
+            
+erasing [1,1e5) from avl needs 10.35 ms.
+erasing [1,1e5) from std::set needs 5.93 ms.
+            
+            
+inserting [0,1e6) to avl needs 115.69 ms.
+inserting [0,1e6) to std::set needs 126.91 ms.
+            
+finding [0,1e6) from avl needs 40.80 ms.
+finding [0,1e6) from set::set needs 61.60 ms.
+            
+erasing [1,1e6) from avl needs 93.81 ms.
+erasing [1,1e6) from std::set needs 75.55 ms.
+            
+            
+inserting [0,1e7) to avl needs 1266.57 ms.
+inserting [0,1e7) to std::set needs 1607.99 ms.
+            
+finding [0,1e7) from avl needs 434.53 ms.
+finding [0,1e7) from set::set needs 675.47 ms.
+            
+erasing [1,1e7) from avl needs 1061.22 ms.
+erasing [1,1e7) from std::set needs 845.73 ms.
 </code></pre></li>
-<li>
-<p>重写的avl树删除部分没有写,今天重新写,写了一天总是有bug,一定要远离双重指针,很难玩明白.</p>
-</li>
-<li>
-<p>睡觉前把双重指针全都改掉了,用返回值代替,改了5分钟,改好了.我以后一定远离双重指针,真的用不利索.双重指针太可怕了太可怕了太可怕了.😭😭😭</p>
+</ol>
 </li>
 </ol>
 </li>
+<li>
+<p>B-/B+ 树</p>
+<ol>
 <li></li>
-<li></li>
+</ol>
+</li>
 </ol>
 
     </article>
