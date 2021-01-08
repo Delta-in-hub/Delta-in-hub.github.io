@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 05 Aug 2020 13:25:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Dec 2020 17:16:43 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/categories/vjudge/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,9 +23,47 @@
 
       
       <item>
+        <title>TrainCamp2020 搜索和简单图论</title>
+        <link>https://www.deltablog.xyz/posts/graphandsearch/</link>
+        <pubDate>Wed, 09 Dec 2020 17:16:43 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Wed, 09 Dec 2020 17:16:43 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/graphandsearch/</guid>
+        <description>搜索和简单图论 A - Knight Moves HDU 1372 每组数据输入两个坐标,(a-h)代表列,(1-8)代表行,得出Knight Move的最小步数 国际象棋中Knight</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Vjudge</category>
+            
+          
+            
+              <category>ACM</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>训练赛和某场CF的一些题</title>
         <link>https://www.deltablog.xyz/posts/questionsabouttrainingandindividualcompetitions/</link>
-        <pubDate>Wed, 05 Aug 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 16:56:10 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 16:56:10 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/questionsabouttrainingandindividualcompetitions/</guid>
@@ -63,7 +101,7 @@
       <item>
         <title>TrainCamp2020 数学基础</title>
         <link>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</link>
-        <pubDate>Fri, 24 Jul 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 16:42:25 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 16:42:25 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</guid>
@@ -101,49 +139,11 @@
       <item>
         <title>TrainCamp2020 基础数据结构</title>
         <link>https://www.deltablog.xyz/posts/basicquesionaboutdsa/</link>
-        <pubDate>Mon, 13 Jul 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 16:27:34 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 16:27:34 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/basicquesionaboutdsa/</guid>
         <description>基础数据结构 A - Web Navigation POJ-1028 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 #include &amp;lt;string&amp;gt;#include &amp;lt;iostream&amp;gt;#include &amp;lt;stack&amp;gt; using</description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>C|C&#43;&#43;</category>
-            
-          
-        
-        
-          
-            
-              <category>Coding</category>
-            
-          
-            
-              <category>Vjudge</category>
-            
-          
-            
-              <category>ACM</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>TrainCamp2020 搜索和简单图论</title>
-        <link>https://www.deltablog.xyz/posts/graphandsearch/</link>
-        <pubDate>Sun, 05 Jul 2020 13:25:00 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Wed, 09 Dec 2020 17:16:43 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/graphandsearch/</guid>
-        <description>搜索和简单图论 A - Knight Moves HDU 1372 每组数据输入两个坐标,(a-h)代表列,(1-8)代表行,得出Knight Move的最小步数 国际象棋中Knight</description>
         
         <dc:creator>Delta</dc:creator>
         

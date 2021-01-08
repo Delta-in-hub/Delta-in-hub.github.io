@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 05 Aug 2020 13:25:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Dec 2020 17:16:43 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/categories/acm/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,9 +23,47 @@
 
       
       <item>
+        <title>TrainCamp2020 搜索和简单图论</title>
+        <link>https://www.deltablog.xyz/posts/graphandsearch/</link>
+        <pubDate>Wed, 09 Dec 2020 17:16:43 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Wed, 09 Dec 2020 17:16:43 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/graphandsearch/</guid>
+        <description>搜索和简单图论 A - Knight Moves HDU 1372 每组数据输入两个坐标,(a-h)代表列,(1-8)代表行,得出Knight Move的最小步数 国际象棋中Knight</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Vjudge</category>
+            
+          
+            
+              <category>ACM</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>训练赛和某场CF的一些题</title>
         <link>https://www.deltablog.xyz/posts/questionsabouttrainingandindividualcompetitions/</link>
-        <pubDate>Wed, 05 Aug 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 16:56:10 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 16:56:10 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/questionsabouttrainingandindividualcompetitions/</guid>
@@ -63,7 +101,7 @@
       <item>
         <title>TrainCamp2020 数学基础</title>
         <link>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</link>
-        <pubDate>Fri, 24 Jul 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 16:42:25 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 16:42:25 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</guid>
@@ -101,7 +139,7 @@
       <item>
         <title>TrainCamp2020 基础数据结构</title>
         <link>https://www.deltablog.xyz/posts/basicquesionaboutdsa/</link>
-        <pubDate>Mon, 13 Jul 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 16:27:34 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 16:27:34 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/basicquesionaboutdsa/</guid>
@@ -137,47 +175,9 @@
       </item>
       
       <item>
-        <title>TrainCamp2020 搜索和简单图论</title>
-        <link>https://www.deltablog.xyz/posts/graphandsearch/</link>
-        <pubDate>Sun, 05 Jul 2020 13:25:00 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Wed, 09 Dec 2020 17:16:43 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/graphandsearch/</guid>
-        <description>搜索和简单图论 A - Knight Moves HDU 1372 每组数据输入两个坐标,(a-h)代表列,(1-8)代表行,得出Knight Move的最小步数 国际象棋中Knight</description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>C|C&#43;&#43;</category>
-            
-          
-        
-        
-          
-            
-              <category>Coding</category>
-            
-          
-            
-              <category>Vjudge</category>
-            
-          
-            
-              <category>ACM</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
         <title>大一做的一些水题</title>
         <link>https://www.deltablog.xyz/posts/easyquestioninfirstyear/</link>
-        <pubDate>Fri, 14 Feb 2020 18:18:46 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 15:38:46 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 15:38:46 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/easyquestioninfirstyear/</guid>

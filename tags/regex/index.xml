@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 28 Nov 2020 13:25:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Dec 2020 20:32:31 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +25,7 @@
       <item>
         <title>正则表达式</title>
         <link>https://www.deltablog.xyz/posts/regex/</link>
-        <pubDate>Sat, 28 Nov 2020 13:25:00 +0800</pubDate>
+        <pubDate>Wed, 09 Dec 2020 20:32:31 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Wed, 09 Dec 2020 20:32:31 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/regex/</guid>

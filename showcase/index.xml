@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 19 Jan 2020 15:43:38 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 23:17:23 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/showcase/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +25,7 @@
       <item>
         <title>Hugo</title>
         <link>https://www.deltablog.xyz/showcase/hugo/</link>
-        <pubDate>Sun, 19 Jan 2020 21:04:11 +0900</pubDate>
+        <pubDate>Tue, 08 Dec 2020 23:17:48 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Tue, 08 Dec 2020 23:17:48 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/showcase/hugo/</guid>

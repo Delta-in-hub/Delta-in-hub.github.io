@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 08 Dec 2020 13:25:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2020 19:57:13 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +25,7 @@
       <item>
         <title>如何使用Hugo搭建一个你的Blog</title>
         <link>https://www.deltablog.xyz/posts/fromhexotohugo/</link>
-        <pubDate>Tue, 08 Dec 2020 13:25:00 +0800</pubDate>
+        <pubDate>Sun, 13 Dec 2020 19:57:13 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Sun, 13 Dec 2020 19:57:13 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/fromhexotohugo/</guid>

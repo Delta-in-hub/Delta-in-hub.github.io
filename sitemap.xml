@@ -8,23 +8,78 @@
   </url>
   
   <url>
-    <loc>https://www.deltablog.xyz/talks/mylinks/</loc>
-    <lastmod>2020-12-09T19:45:17+08:00</lastmod>
+    <loc>https://www.deltablog.xyz/categories/algorithm/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/coding/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/cc&#43;&#43;/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/data-structure/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/%E4%B8%A5%E8%94%9A%E6%95%8F/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/datastructure/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/%E9%82%93%E4%BF%8A%E8%BE%89/</loc>
+    <lastmod>2021-01-08T21:34:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/codingthoughts/</loc>
+    <lastmod>2021-01-02T14:11:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/cppreference/</loc>
+    <lastmod>2021-01-02T14:11:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/problems/</loc>
+    <lastmod>2021-01-02T14:11:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/stackoverflow/</loc>
+    <lastmod>2021-01-02T14:11:10+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/categories/blog/</loc>
     <lastmod>2020-12-13T19:57:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/categories/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/categories/coding/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
   </url>
   
   <url>
@@ -38,16 +93,6 @@
   </url>
   
   <url>
-    <loc>https://www.deltablog.xyz/posts/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.deltablog.xyz/posts/fromhexotohugo/</loc>
     <lastmod>2020-12-13T19:57:13+08:00</lastmod>
   </url>
@@ -55,31 +100,6 @@
   <url>
     <loc>https://www.deltablog.xyz/about/</loc>
     <lastmod>2020-12-09T20:55:43+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/posts/codingthoughts/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/cppreference/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/cc&#43;&#43;/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/categories/problems/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/stackoverflow/</loc>
-    <lastmod>2020-12-29T23:25:53+08:00</lastmod>
   </url>
   
   <url>
@@ -103,32 +123,17 @@
   </url>
   
   <url>
-    <loc>https://www.deltablog.xyz/categories/algorithm/</loc>
-    <lastmod>2020-12-26T23:30:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/categories/data-structure/</loc>
-    <lastmod>2020-12-26T23:30:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/%E4%B8%A5%E8%94%9A%E6%95%8F/</loc>
-    <lastmod>2020-12-26T23:30:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/posts/datastructure/</loc>
-    <lastmod>2020-12-26T23:30:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/%E9%82%93%E4%BF%8A%E8%BE%89/</loc>
-    <lastmod>2020-12-26T23:30:26+08:00</lastmod>
+    <loc>https://www.deltablog.xyz/talks/mylinks/</loc>
+    <lastmod>2020-12-09T19:45:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/categories/acm/</loc>
+    <lastmod>2020-12-09T17:16:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/graphandsearch/</loc>
     <lastmod>2020-12-09T17:16:43+08:00</lastmod>
   </url>
   
@@ -153,11 +158,6 @@
   </url>
   
   <url>
-    <loc>https://www.deltablog.xyz/posts/graphandsearch/</loc>
-    <lastmod>2020-12-09T17:16:43+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.deltablog.xyz/posts/binarysearchtree/</loc>
     <lastmod>2020-12-09T15:45:12+08:00</lastmod>
   </url>
@@ -165,6 +165,11 @@
   <url>
     <loc>https://www.deltablog.xyz/posts/easyquestioninfirstyear/</loc>
     <lastmod>2020-12-09T15:38:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/talks/</loc>
+    <lastmod>2020-12-08T23:32:34+08:00</lastmod>
   </url>
   
   <url>
@@ -180,11 +185,6 @@
   <url>
     <loc>https://www.deltablog.xyz/showcase/</loc>
     <lastmod>2020-12-08T23:17:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/talks/</loc>
-    <lastmod>2020-12-08T23:32:34+08:00</lastmod>
   </url>
   
   <url>

@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 19 Jan 2020 21:04:11 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 23:17:48 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/showcase/hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +25,7 @@
       <item>
         <title>My Awesome Project</title>
         <link>https://www.deltablog.xyz/showcase/hugo/my-awesome-project/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <pubDate>Tue, 08 Dec 2020 23:18:34 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         <atom:modified>Tue, 08 Dec 2020 23:18:34 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/showcase/hugo/my-awesome-project/</guid>
