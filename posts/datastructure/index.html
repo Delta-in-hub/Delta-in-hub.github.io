@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
-<meta name="created" content="2021-01-08T21:34:54&#43;0800">
-<meta name="modified" content="2021-01-08T21:34:54&#43;0800">
-<meta property="article:published_time" content="2021-01-08T21:34:54&#43;0800">
+<meta name="created" content="2021-01-09T22:11:38&#43;0800">
+<meta name="modified" content="2021-01-09T22:11:38&#43;0800">
+<meta property="article:published_time" content="2021-01-09T22:11:38&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "数据结构的学习",
-    "datePublished": "2021-01-08T21:34:54+08:00",
-    "dateModified": "2021-01-08T21:34:54+08:00",
+    "datePublished": "2021-01-09T22:11:38+08:00",
+    "dateModified": "2021-01-09T22:11:38+08:00",
     "url" : "https://www.deltablog.xyz/posts/datastructure/",
     "description": "数据结构 第一章 绪论 $ 1+\\lfloor log_2n \\rfloor $ 为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -1722,9 +1722,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月08日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年01月09日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;17&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;18&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -2710,8 +2710,13 @@ erasing [1,1e7) from std::set needs 845.73 ms.
 <p>根据wikipedia的写法</p>
 <ol>
 <li><code>lomuto划分</code>将数组分为三部分,分别是<code>[items smaller than partition] partitioning element [items larger than or equal to partition]</code>,返回<code>partition</code>的位置</li>
-<li>而 <code>hoare划分</code>分为两部分<code>[items smaller] [items larger or equal]</code> , 返回的并不一定是轴值的位置.</li>
-<li>因为以上的区别 , <code>quciksort</code>写法也有区别. 如果你按照书上的写法写,然后参照wiki上的hoare划分,你就会发现bug,<a href="https://stackoverflow.com/a/35297514/11803107">Hoare&rsquo;s partition not working correctly (quicksort)</a> ,主要看评论.</li>
+<li>而 <code>hoare划分</code>分为两部分<code>[items smaller or equal] [items larger or equal]</code> , 返回的是两个 区间的交界,至于pivot可能在任何地方.</li>
+<li>因为以上的区别 , <code>quciksort</code>写法也有区别. 如果你按照书上的写法写,然后参照wiki上的hoare划分,你就会发现bug,<a href="https://stackoverflow.com/a/35297514/11803107">Hoare&rsquo;s partition not working correctly (quicksort)</a> ,主要看评论. 其实写法可以是一样的,都默认轴值没有就位,写法就一样了.</li>
+</ol>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/56624536/hoares-vs-lomutos-partition">https://stackoverflow.com/questions/56624536/hoares-vs-lomutos-partition</a> .</p>
+</li>
 </ol>
 </li>
 <li>
@@ -2721,7 +2726,7 @@ erasing [1,1e7) from std::set needs 845.73 ms.
 </li>
 <li>
 <p>严老师书上的划分方法,<a href="https://www.cnblogs.com/littlepage/p/11662266.html">根据这位同学的说法</a> ,我们称之为经典划分,是在hoare划分的基础上改进而来.它也将数组分为三部分<code>[less or equal] pivot  [greater or equal]</code>,返回轴值位置.</p>
-</li>
+<ol start="5">
 <li>
 <pre><code>using classic partition to quicksort array of 10000000 needs 1409.10 ms.
 using lomuto partition to quicksort array of 10000000 needs 1629.70 ms.
@@ -2731,10 +2736,15 @@ using built-in qsort to sort array of 10000000 needs 859.20 ms.
 </ol>
 </li>
 <li>
-<p><a href="https://www.youtube.com/watch?v=MZaf_9IZCrc">lomuto划分演示</a></p>
+<p>上面的测试是随机生成的数据,自己写的quicksort性能还可以,但是面对数组元素全部相同<code>lomuto / classic partition</code>性能严重退化,根本没法用,<code>hoare partition</code>差于<code>qsort</code> . 若初始数组全部有序或者全部逆序,自己写的quicksort全部暴毙. 当然咱们的pivot选择过于简单,没法应对退化的情况.</p>
+</li>
+</ol>
 </li>
 <li>
-<p><a href="https://www.youtube.com/watch?v=Hoixgm4-P4M">hoare划分演示</a> 这个视频最后给的代码是<em>lomuto划分</em>,但视频演示的是hoare划分</p>
+<p><a href="https://www.youtube.com/watch?v=MZaf_9IZCrc">lomuto划分演示</a></p>
+<ol start="4">
+<li>
+<p><a href="https://www.youtube.com/watch?v=Hoixgm4-P4M">hoare划分演示</a> 这个视频演示的是hoare划分,但是最后给的代码是<em>lomuto划分</em>.</p>
 </li>
 <li>
 <p>不稳定排序</p>
@@ -2752,14 +2762,29 @@ using built-in qsort to sort array of 10000000 needs 859.20 ms.
 <li><a href="https://www.zhihu.com/question/20926405/answer/54899416">选择排序究竟属于稳定排序还是不稳定排序?</a> 看此回答的评论区.</li>
 </ol>
 </li>
-<li>堆排序</li>
+<li>堆排序
+<ol>
+<li><a href="https://www.bilibili.com/video/av47196993">https://www.bilibili.com/video/av47196993</a></li>
+<li>不稳定排序,但是性能表现非常稳定,最坏时间复杂度也为$O(nlog_2{n})$</li>
+</ol>
+</li>
 </ol>
 </li>
 <li>
 <p>归并排序</p>
+<ol>
+<li><a href="https://www.bilibili.com/video/av9982752/">https://www.bilibili.com/video/av9982752/</a></li>
+<li>稳定排序</li>
+<li>对于数组需要$O(n)$ 的空间,当然也有原地归并排序(<code>The only known ways to merge in-place (without any extra space) are too complex to be reduced to practical program.</code>) <a href="https://stackoverflow.com/questions/2571049/how-to-sort-in-place-using-the-merge-sort-algorithm">How to sort in-place using the merge sort algorithm?</a></li>
+<li>原地归也许没有那么美好,<code>From a practical perspective, there is evidence that pure in-place implementations are not performing better in real world scenarios. </code> <a href="https://stackoverflow.com/a/53900642/11803107">https://stackoverflow.com/a/53900642/11803107</a></li>
+<li><a href="https://stackoverflow.com/a/4375732/11803107">时间O(n)的原地归并实现 templatetypedef@StackOverflow</a>  但是此算法要求<code>Range to merge must have an even number of elements.</code></li>
+</ol>
 </li>
 <li>
 <p>基数排序</p>
+<ol>
+<li></li>
+</ol>
 </li>
 </ol>
 <p>以上为常见的内部排序</p>
@@ -3014,7 +3039,7 @@ using built-in qsort to sort array of 10000000 needs 859.20 ms.
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-08 21:34:54.4397222 \u002b0800 CST',
+    id: '2021-01-09 22:11:38.0142644 \u002b0800 CST',
     title: '数据结构的学习',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
