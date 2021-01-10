@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 09 Jan 2021 22:11:38 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jan 2021 15:04:44 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/%E9%82%93%E4%BF%8A%E8%BE%89/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,9 +25,9 @@
       <item>
         <title>数据结构的学习</title>
         <link>https://www.deltablog.xyz/posts/datastructure/</link>
-        <pubDate>Sat, 09 Jan 2021 22:11:38 +0800</pubDate>
+        <pubDate>Sun, 10 Jan 2021 15:04:44 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Sat, 09 Jan 2021 22:11:38 +0800</atom:modified>
+        <atom:modified>Sun, 10 Jan 2021 15:04:44 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/datastructure/</guid>
         <description>数据结构 第一章 绪论 $ 1+\lfloor log_2n \rfloor $ 为n二进制展开的位数 , 同理 $1+\lfloor \ln10\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之</description>
         

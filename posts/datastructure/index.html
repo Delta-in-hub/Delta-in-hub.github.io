@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,邓俊辉,严蔚敏">
 
-<meta name="created" content="2021-01-09T22:11:38&#43;0800">
-<meta name="modified" content="2021-01-09T22:11:38&#43;0800">
-<meta property="article:published_time" content="2021-01-09T22:11:38&#43;0800">
+<meta name="created" content="2021-01-10T15:04:44&#43;0800">
+<meta name="modified" content="2021-01-10T15:04:44&#43;0800">
+<meta property="article:published_time" content="2021-01-10T15:04:44&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "数据结构的学习",
-    "datePublished": "2021-01-09T22:11:38+08:00",
-    "dateModified": "2021-01-09T22:11:38+08:00",
+    "datePublished": "2021-01-10T15:04:44+08:00",
+    "dateModified": "2021-01-10T15:04:44+08:00",
     "url" : "https://www.deltablog.xyz/posts/datastructure/",
     "description": "数据结构 第一章 绪论 $ 1+\\lfloor log_2n \\rfloor $ 为n二进制展开的位数 , 同理 $1+\\lfloor \\ln10\\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之",
     "keywords": ["C|C++","邓俊辉","严蔚敏"],
@@ -1722,7 +1722,7 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月09日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年01月10日 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;18&nbsp;分钟 </span>
   
@@ -2726,23 +2726,19 @@ erasing [1,1e7) from std::set needs 845.73 ms.
 </li>
 <li>
 <p>严老师书上的划分方法,<a href="https://www.cnblogs.com/littlepage/p/11662266.html">根据这位同学的说法</a> ,我们称之为经典划分,是在hoare划分的基础上改进而来.它也将数组分为三部分<code>[less or equal] pivot  [greater or equal]</code>,返回轴值位置.</p>
-<ol start="5">
-<li>
-<pre><code>using classic partition to quicksort array of 10000000 needs 1409.10 ms.
-using lomuto partition to quicksort array of 10000000 needs 1629.70 ms.
-using hoare partition to quicksort array of 10000000 needs 718.90 ms.
-using built-in qsort to sort array of 10000000 needs 859.20 ms.
-</code></pre></li>
-</ol>
 </li>
+<li>
+<pre><code>    using classic partition to quicksort array of 10000000 needs 1409.10 ms.
+    using lomuto partition to quicksort array of 10000000 needs 1629.70 ms.
+    using hoare partition to quicksort array of 10000000 needs 718.90 ms.
+    using built-in qsort to sort array of 10000000 needs 859.20 ms.
+</code></pre></li>
 <li>
 <p>上面的测试是随机生成的数据,自己写的quicksort性能还可以,但是面对数组元素全部相同<code>lomuto / classic partition</code>性能严重退化,根本没法用,<code>hoare partition</code>差于<code>qsort</code> . 若初始数组全部有序或者全部逆序,自己写的quicksort全部暴毙. 当然咱们的pivot选择过于简单,没法应对退化的情况.</p>
 </li>
-</ol>
-</li>
 <li>
 <p><a href="https://www.youtube.com/watch?v=MZaf_9IZCrc">lomuto划分演示</a></p>
-<ol start="4">
+</li>
 <li>
 <p><a href="https://www.youtube.com/watch?v=Hoixgm4-P4M">hoare划分演示</a> 这个视频演示的是hoare划分,但是最后给的代码是<em>lomuto划分</em>.</p>
 </li>
@@ -3039,7 +3035,7 @@ using built-in qsort to sort array of 10000000 needs 859.20 ms.
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-09 22:11:38.0142644 \u002b0800 CST',
+    id: '2021-01-10 15:04:44.2925418 \u002b0800 CST',
     title: '数据结构的学习',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
