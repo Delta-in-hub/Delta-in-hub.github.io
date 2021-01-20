@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 10 Jan 2021 19:32:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jan 2021 00:40:33 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/cc++/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,53 @@
 
       
       <item>
+        <title>Coding随想拾遗与语言学习笔记</title>
+        <link>https://www.deltablog.xyz/posts/codingthoughts/</link>
+        <pubDate>Thu, 21 Jan 2021 00:40:33 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Thu, 21 Jan 2021 00:40:33 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/codingthoughts/</guid>
+        <description>Coding随想拾遗 有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章. 还有许多分散着之前的文章里,找</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+            
+              <category>Stackoverflow</category>
+            
+          
+            
+              <category>CppReference</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Problems</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>数据结构的学习</title>
         <link>https://www.deltablog.xyz/posts/datastructure/</link>
-        <pubDate>Sun, 10 Jan 2021 19:32:53 +0800</pubDate>
+        <pubDate>Fri, 15 Jan 2021 14:18:25 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Sun, 10 Jan 2021 19:32:53 +0800</atom:modified>
+        <atom:modified>Fri, 15 Jan 2021 14:18:25 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/datastructure/</guid>
         <description>数据结构 第一章 绪论 $ 1+\lfloor log_2n \rfloor $ 为n二进制展开的位数 , 同理 $1+\lfloor \ln10\rfloor $为十进制 数n 的位数. 实际上，由基本的数论知识不难验证 , 任意整数的平方关于5整除之</description>
         
@@ -62,48 +104,6 @@
           
             
               <category>Algorithm</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Coding随想拾遗</title>
-        <link>https://www.deltablog.xyz/posts/codingthoughts/</link>
-        <pubDate>Sat, 02 Jan 2021 14:11:10 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Sat, 02 Jan 2021 14:11:10 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/codingthoughts/</guid>
-        <description>Coding随想拾遗 有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章. 还有许多分散着之前的文章里,找</description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>C|C&#43;&#43;</category>
-            
-          
-            
-              <category>Stackoverflow</category>
-            
-          
-            
-              <category>CppReference</category>
-            
-          
-        
-        
-          
-            
-              <category>Coding</category>
-            
-          
-            
-              <category>Problems</category>
             
           
         
