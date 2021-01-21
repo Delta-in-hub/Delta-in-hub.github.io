@@ -307,9 +307,9 @@
     var notAllowedTitleIds = null;
 
     
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
-    var tocLevels = JSON.parse("[\"h1\",\"h2\",\"h3\",\"h4\"]");
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
     
     if (tocLevels) {
       tocLevels = tocLevels.toString();
@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,Stackoverflow,CppReference">
 
-<meta name="created" content="2021-01-21T10:12:43&#43;0800">
-<meta name="modified" content="2021-01-21T10:12:43&#43;0800">
-<meta property="article:published_time" content="2021-01-21T10:12:43&#43;0800">
+<meta name="created" content="2021-01-21T10:16:35&#43;0800">
+<meta name="modified" content="2021-01-21T10:16:35&#43;0800">
+<meta property="article:published_time" content="2021-01-21T10:16:35&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "Coding随想拾遗与语言学习笔记",
-    "datePublished": "2021-01-21T10:12:43+08:00",
-    "dateModified": "2021-01-21T10:12:43+08:00",
+    "datePublished": "2021-01-21T10:16:35+08:00",
+    "dateModified": "2021-01-21T10:16:35+08:00",
     "url" : "https://www.deltablog.xyz/posts/codingthoughts/",
     "description": "🌟有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章.敲代码时想到什么,遇到什么问题,就搜集整理一下,放到这篇文章里.✨🌟作为一个致力于成为C++语言律师的人,我也会在本篇文章记录C++学习的感想.✨",
     "keywords": ["C|C++","Stackoverflow","CppReference"],
@@ -1678,7 +1678,7 @@ if (!doNotTrack) {
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -4042,7 +4042,7 @@ C.UTF-8
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-21 10:12:43.2397994 \u002b0800 CST',
+    id: '2021-01-21 10:16:35.1353954 \u002b0800 CST',
     title: 'Coding随想拾遗与语言学习笔记',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -4389,61 +4389,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title" data-ani="true">目录</h6>
-    
-      <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#卡特兰数"><strong>卡特兰数</strong></a></li>
-    <li><a href="#迭代器类型">迭代器类型</a></li>
-    <li><a href="#缓冲区空字符">缓冲区空字符</a></li>
-    <li><a href="#c生成随机数">C++生成随机数</a></li>
-    <li><a href="#程序运行时间">程序运行时间</a></li>
-    <li><a href="#关于定宽整数类型">关于定宽整数类型</a></li>
-    <li><a href="#对unsigned-赋负值及与负数运算">对unsigned 赋负值及与负数运算</a></li>
-    <li><a href="#四舍五入到任意位">四舍五入到任意位</a></li>
-    <li><a href="#交并差集">交并差集</a></li>
-    <li><a href="#读写输出中文">读写,输出中文</a>
-      <ul>
-        <li><a href="#直接向控制台输出中文">直接向控制台输出中文</a></li>
-        <li><a href="#写文本">写文本</a></li>
-        <li><a href="#读gb-18030文件">读GB-18030文件</a></li>
-        <li><a href="#读utf-8文件">读UTF-8文件</a></li>
-        <li><a href="#中文文件名">中文文件名</a></li>
-        <li><a href="#linux环境">Linux环境</a></li>
-        <li><a href="#总结">总结</a></li>
-      </ul>
-    </li>
-    <li><a href="#lambda">Lambda</a></li>
-    <li><a href="#static">static</a></li>
-    <li><a href="#inline">inline</a>
-      <ul>
-        <li><a href="#c">C</a></li>
-        <li><a href="#c-1">C++</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
@@ -4451,7 +4396,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"inner\"");
+  var tocPosition = JSON.parse("\"outer\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -4642,7 +4587,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
@@ -5198,6 +5143,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+    
+      
+        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr" data-ani="true">
+          <h6 class="toc__title toc__title--outer" data-ani="true">目录</h6>
+          
+          <label class="switch" data-ani="true">
+            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="true">
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#卡特兰数"><strong>卡特兰数</strong></a></li>
+    <li><a href="#迭代器类型">迭代器类型</a></li>
+    <li><a href="#缓冲区空字符">缓冲区空字符</a></li>
+    <li><a href="#c生成随机数">C++生成随机数</a></li>
+    <li><a href="#程序运行时间">程序运行时间</a></li>
+    <li><a href="#关于定宽整数类型">关于定宽整数类型</a></li>
+    <li><a href="#对unsigned-赋负值及与负数运算">对unsigned 赋负值及与负数运算</a></li>
+    <li><a href="#四舍五入到任意位">四舍五入到任意位</a></li>
+    <li><a href="#交并差集">交并差集</a></li>
+    <li><a href="#读写输出中文">读写,输出中文</a>
+      <ul>
+        <li><a href="#直接向控制台输出中文">直接向控制台输出中文</a></li>
+        <li><a href="#写文本">写文本</a></li>
+        <li><a href="#读gb-18030文件">读GB-18030文件</a></li>
+        <li><a href="#读utf-8文件">读UTF-8文件</a></li>
+        <li><a href="#中文文件名">中文文件名</a></li>
+        <li><a href="#linux环境">Linux环境</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+    <li><a href="#lambda">Lambda</a></li>
+    <li><a href="#static">static</a></li>
+    <li><a href="#inline">inline</a>
+      <ul>
+        <li><a href="#c">C</a></li>
+        <li><a href="#c-1">C++</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+      
+    
   
 </div>
 

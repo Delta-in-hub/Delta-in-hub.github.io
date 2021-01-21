@@ -307,9 +307,9 @@
     var notAllowedTitleIds = null;
 
     
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
-    var tocLevels = JSON.parse("[\"h1\",\"h2\",\"h3\",\"h4\"]");
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
     
     if (tocLevels) {
       tocLevels = tocLevels.toString();
@@ -1678,7 +1678,7 @@ if (!doNotTrack) {
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -5801,71 +5801,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title" data-ani="true">目录</h6>
-    
-      <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#problem-fibonacci">Problem: Fibonacci</a></li>
-    <li><a href="#problem-proxy">Problem: Proxy</a></li>
-    <li><a href="#problem-swiss-system-tournament">Problem: Swiss-system tournament</a></li>
-    <li><a href="#problem-memory-leak">Problem: Memory Leak</a></li>
-    <li><a href="#problem-primorial-vs-lcm">Problem: Primorial vs LCM</a>
-      <ul>
-        <li><a href="#lcm1n">LCM(1~n)</a></li>
-      </ul>
-    </li>
-    <li><a href="#problem-tree">Problem: Tree</a>
-      <ul>
-        <li><a href="#wa两发">wa两发</a></li>
-        <li><a href="#ac两发">ac两发</a></li>
-        <li><a href="#字符串转数字">字符串转数字</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#k---birdwatchinghttpsvjudgenetproblemgym-102501k"><a href="https://vjudge.net/problem/Gym-102501K">K - Birdwatching</a></a></li>
-    <li><a href="#f---icebergshttpsvjudgenetproblemgym-102501f"><a href="https://vjudge.net/problem/Gym-102501F">F - Icebergs</a></a></li>
-    <li><a href="#a---environment-friendly-travelhttpsvjudgenetproblemgym-102501a"><a href="https://vjudge.net/problem/Gym-102501A">A - Environment-Friendly Travel</a></a>
-      <ul>
-        <li><a href="#用二维数组">用二维数组</a></li>
-        <li><a href="#跑两遍dijkstra">跑两遍dijkstra()</a></li>
-        <li><a href="#找了俩题做">找了俩题做</a></li>
-      </ul>
-    </li>
-    <li><a href="#a---case-of-chocolatehttpsvjudgenetproblemcodeforces-555c"><a href="https://vjudge.net/problem/CodeForces-555C">A - Case of Chocolate</a></a>
-      <ul>
-        <li><a href="#d-bouncing-boomerangs">D. Bouncing Boomerangs</a></li>
-        <li><a href="#c---hello-xtcpchttpsvjudgenetproblemhdu-6536"><a href="https://vjudge.net/problem/HDU-6536">C - Hello XTCPC</a></a></li>
-        <li><a href="#c-palindromifier">C. Palindromifier</a></li>
-        <li><a href="#e-carrots-for-rabbits">E. Carrots for Rabbits</a></li>
-      </ul>
-    </li>
-    <li><a href="#f---ssy-and-jlbdhttpsvjudgenetproblemhdu-6542"><a href="https://vjudge.net/problem/HDU-6542">F - SSY and JLBD</a></a></li>
-    <li><a href="#maratonime-plays-nim">MaratonIME plays Nim</a></li>
-  </ul>
-</nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
@@ -5873,7 +5808,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"inner\"");
+  var tocPosition = JSON.parse("\"outer\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -6064,7 +5999,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
@@ -6620,6 +6555,64 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+    
+      
+        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr" data-ani="true">
+          <h6 class="toc__title toc__title--outer" data-ani="true">目录</h6>
+          
+          <label class="switch" data-ani="true">
+            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="true">
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#problem-fibonacci">Problem: Fibonacci</a></li>
+    <li><a href="#problem-proxy">Problem: Proxy</a></li>
+    <li><a href="#problem-swiss-system-tournament">Problem: Swiss-system tournament</a></li>
+    <li><a href="#problem-memory-leak">Problem: Memory Leak</a></li>
+    <li><a href="#problem-primorial-vs-lcm">Problem: Primorial vs LCM</a>
+      <ul>
+        <li><a href="#lcm1n">LCM(1~n)</a></li>
+      </ul>
+    </li>
+    <li><a href="#problem-tree">Problem: Tree</a>
+      <ul>
+        <li><a href="#wa两发">wa两发</a></li>
+        <li><a href="#ac两发">ac两发</a></li>
+        <li><a href="#字符串转数字">字符串转数字</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#k---birdwatchinghttpsvjudgenetproblemgym-102501k"><a href="https://vjudge.net/problem/Gym-102501K">K - Birdwatching</a></a></li>
+    <li><a href="#f---icebergshttpsvjudgenetproblemgym-102501f"><a href="https://vjudge.net/problem/Gym-102501F">F - Icebergs</a></a></li>
+    <li><a href="#a---environment-friendly-travelhttpsvjudgenetproblemgym-102501a"><a href="https://vjudge.net/problem/Gym-102501A">A - Environment-Friendly Travel</a></a>
+      <ul>
+        <li><a href="#用二维数组">用二维数组</a></li>
+        <li><a href="#跑两遍dijkstra">跑两遍dijkstra()</a></li>
+        <li><a href="#找了俩题做">找了俩题做</a></li>
+      </ul>
+    </li>
+    <li><a href="#a---case-of-chocolatehttpsvjudgenetproblemcodeforces-555c"><a href="https://vjudge.net/problem/CodeForces-555C">A - Case of Chocolate</a></a>
+      <ul>
+        <li><a href="#d-bouncing-boomerangs">D. Bouncing Boomerangs</a></li>
+        <li><a href="#c---hello-xtcpchttpsvjudgenetproblemhdu-6536"><a href="https://vjudge.net/problem/HDU-6536">C - Hello XTCPC</a></a></li>
+        <li><a href="#c-palindromifier">C. Palindromifier</a></li>
+        <li><a href="#e-carrots-for-rabbits">E. Carrots for Rabbits</a></li>
+      </ul>
+    </li>
+    <li><a href="#f---ssy-and-jlbdhttpsvjudgenetproblemhdu-6542"><a href="https://vjudge.net/problem/HDU-6542">F - SSY and JLBD</a></a></li>
+    <li><a href="#maratonime-plays-nim">MaratonIME plays Nim</a></li>
+  </ul>
+</nav>
+        </div>
+      
+    
   
 </div>
 

@@ -307,9 +307,9 @@
     var notAllowedTitleIds = null;
 
     
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
-    var tocLevels = JSON.parse("[\"h1\",\"h2\",\"h3\",\"h4\"]");
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
     
     if (tocLevels) {
       tocLevels = tocLevels.toString();
@@ -1678,7 +1678,7 @@ if (!doNotTrack) {
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -4041,94 +4041,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title" data-ani="true">目录</h6>
-    
-      <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#l2-4--部落"><strong>L2-4</strong>  <strong>部落</strong></a>
-      <ul>
-        <li><a href="#输入格式">输入格式：</a></li>
-        <li><a href="#输出格式">输出格式：</a></li>
-        <li><a href="#输入样例">输入样例：</a></li>
-        <li><a href="#输出样例">输出样例：</a></li>
-        <li><a href="#思路">思路</a></li>
-        <li><a href="#题解">题解</a></li>
-      </ul>
-    </li>
-    <li><a href="#l2-008-最长对称子串">L2-008. 最长对称子串</a>
-      <ul>
-        <li><a href="#输入格式-1">输入格式：</a></li>
-        <li><a href="#输出格式-1">输出格式：</a></li>
-        <li><a href="#输入样例-1">输入样例：</a></li>
-        <li><a href="#输出样例-1">输出样例：</a></li>
-        <li><a href="#思路-1">思路</a></li>
-        <li><a href="#题解-1">题解</a></li>
-      </ul>
-    </li>
-    <li><a href="#b烦人的依赖拓扑排序">B烦人的依赖(拓扑排序)</a>
-      <ul>
-        <li><a href="#输入描述">输入描述:</a></li>
-        <li><a href="#思路-2">思路</a></li>
-        <li><a href="#题解-2">题解</a></li>
-      </ul>
-    </li>
-    <li><a href="#g校车">G校车</a>
-      <ul>
-        <li><a href="#输入描述-1">输入描述:</a></li>
-        <li><a href="#思路-3">思路</a></li>
-        <li><a href="#题解-3">题解</a></li>
-      </ul>
-    </li>
-    <li><a href="#打印问题">打印问题</a>
-      <ul>
-        <li><a href="#金字塔-_1">金字塔 _1</a></li>
-        <li><a href="#倒三角形_1">倒三角形_1</a></li>
-        <li><a href="#数字三角形">数字三角形</a></li>
-        <li><a href="#弗洛伊德三角">弗洛伊德三角</a></li>
-      </ul>
-    </li>
-    <li><a href="#字符串相关">字符串相关</a>
-      <ul>
-        <li><a href="#最长回文子串">最长回文子串</a></li>
-        <li><a href="#删除字符串中空格">删除字符串中空格</a></li>
-      </ul>
-    </li>
-    <li><a href="#迭代器">迭代器</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#一些乱七八糟的">一些乱七八糟的</a>
-      <ul>
-        <li><a href="#最大公约数gcd--最小公倍数lcm">最大公约数GCD , 最小公倍数LCM</a></li>
-        <li><a href="#数字相关">数字相关</a></li>
-        <li><a href="#排序算法">排序算法</a></li>
-        <li><a href="#io相关">IO相关</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
@@ -4136,7 +4048,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"inner\"");
+  var tocPosition = JSON.parse("\"outer\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -4327,7 +4239,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
@@ -4883,6 +4795,87 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+    
+      
+        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr" data-ani="true">
+          <h6 class="toc__title toc__title--outer" data-ani="true">目录</h6>
+          
+          <label class="switch" data-ani="true">
+            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="true">
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#l2-4--部落"><strong>L2-4</strong>  <strong>部落</strong></a>
+      <ul>
+        <li><a href="#输入格式">输入格式：</a></li>
+        <li><a href="#输出格式">输出格式：</a></li>
+        <li><a href="#输入样例">输入样例：</a></li>
+        <li><a href="#输出样例">输出样例：</a></li>
+        <li><a href="#思路">思路</a></li>
+        <li><a href="#题解">题解</a></li>
+      </ul>
+    </li>
+    <li><a href="#l2-008-最长对称子串">L2-008. 最长对称子串</a>
+      <ul>
+        <li><a href="#输入格式-1">输入格式：</a></li>
+        <li><a href="#输出格式-1">输出格式：</a></li>
+        <li><a href="#输入样例-1">输入样例：</a></li>
+        <li><a href="#输出样例-1">输出样例：</a></li>
+        <li><a href="#思路-1">思路</a></li>
+        <li><a href="#题解-1">题解</a></li>
+      </ul>
+    </li>
+    <li><a href="#b烦人的依赖拓扑排序">B烦人的依赖(拓扑排序)</a>
+      <ul>
+        <li><a href="#输入描述">输入描述:</a></li>
+        <li><a href="#思路-2">思路</a></li>
+        <li><a href="#题解-2">题解</a></li>
+      </ul>
+    </li>
+    <li><a href="#g校车">G校车</a>
+      <ul>
+        <li><a href="#输入描述-1">输入描述:</a></li>
+        <li><a href="#思路-3">思路</a></li>
+        <li><a href="#题解-3">题解</a></li>
+      </ul>
+    </li>
+    <li><a href="#打印问题">打印问题</a>
+      <ul>
+        <li><a href="#金字塔-_1">金字塔 _1</a></li>
+        <li><a href="#倒三角形_1">倒三角形_1</a></li>
+        <li><a href="#数字三角形">数字三角形</a></li>
+        <li><a href="#弗洛伊德三角">弗洛伊德三角</a></li>
+      </ul>
+    </li>
+    <li><a href="#字符串相关">字符串相关</a>
+      <ul>
+        <li><a href="#最长回文子串">最长回文子串</a></li>
+        <li><a href="#删除字符串中空格">删除字符串中空格</a></li>
+      </ul>
+    </li>
+    <li><a href="#迭代器">迭代器</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#一些乱七八糟的">一些乱七八糟的</a>
+      <ul>
+        <li><a href="#最大公约数gcd--最小公倍数lcm">最大公约数GCD , 最小公倍数LCM</a></li>
+        <li><a href="#数字相关">数字相关</a></li>
+        <li><a href="#排序算法">排序算法</a></li>
+        <li><a href="#io相关">IO相关</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+      
+    
   
 </div>
 

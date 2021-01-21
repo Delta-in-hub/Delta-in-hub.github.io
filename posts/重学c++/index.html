@@ -307,9 +307,9 @@
     var notAllowedTitleIds = null;
 
     
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
-    var tocLevels = JSON.parse("[\"h1\",\"h2\",\"h3\",\"h4\"]");
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
     
     if (tocLevels) {
       tocLevels = tocLevels.toString();
@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,CPP,Stackoverflow,CppReference">
 
-<meta name="created" content="2021-01-21T10:15:17&#43;0800">
-<meta name="modified" content="2021-01-21T10:15:17&#43;0800">
-<meta property="article:published_time" content="2021-01-21T10:15:17&#43;0800">
+<meta name="created" content="2021-01-22T00:03:41&#43;0800">
+<meta name="modified" content="2021-01-22T00:03:41&#43;0800">
+<meta property="article:published_time" content="2021-01-22T00:03:41&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,10 +1377,10 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "重学C++",
-    "datePublished": "2021-01-21T10:15:17+08:00",
-    "dateModified": "2021-01-21T10:15:17+08:00",
+    "datePublished": "2021-01-22T00:03:41+08:00",
+    "dateModified": "2021-01-22T00:03:41+08:00",
     "url" : "https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c++/",
-    "description": "",
+    "description": "重学C++ C++ Primer 5th 现代 C++ 教程：高速上手 C++11/14/17/20 学习书籍资料如上 + Google It static / inline static inline 顶层/底层const 简单说，顶层const是指“指针本身是常量”，而底",
     "keywords": ["C|C++","CPP","Stackoverflow","CppReference"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1678,7 +1678,7 @@ if (!doNotTrack) {
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -1722,9 +1722,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月21日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年01月22日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;0&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;4&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -1750,7 +1750,180 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      
+      <h1 id="重学c">重学C++</h1>
+<blockquote>
+<p><a href="https://github.com/xaxfan/Cpp_Primer_5th">C++ Primer 5th</a></p>
+<p><a href="https://changkun.de/modern-cpp/">现代 C++ 教程：高速上手 C++11/14/17/20</a></p>
+</blockquote>
+<p>学习书籍资料如上 + Google It</p>
+<h2 id="static---inline">static /  inline</h2>
+<p><a href="/posts/codingthoughts/#static">static </a> <br />
+<a href="/posts/codingthoughts/#inline">inline</a></p>
+<h2 id="顶层底层const">顶层/底层const</h2>
+<blockquote>
+<p>简单说，顶层const是指“指针本身是常量”，而底层const是指“指针指向的对象是常量”。</p>
+<p>说白了就是常量指针和指向常量的指针。@陈伟的回答 - 知乎 <a href="https://www.zhihu.com/question/24785843/answer/128871816">https://www.zhihu.com/question/24785843/answer/128871816</a></p>
+</blockquote>
+<blockquote>
+<p>关于top-level const，从标准角度来说，标准用的词叫做top-level cv-qualifier。 cv-qualifier 就是 const, volatile, const volatile，或者empty。</p>
+<p>对于一个类型T（例如typedef const char * T;)，类型 cv T的top-level cv-qualifier就是cv。cv T的含义就是T是cv。</p>
+<p>const T的top-level cv-qualifier就是const。含义是类型T是const的。<br />
+const volatile T的top-level cv-qualifier就是const volatile。含义是类型T是const volatile的。</p>
+<p>注意的是，如果T 是const char *，那么 const T 其实等同于 const char * const 。大家都解释很多了，不详述了。</p>
+<p>C++标准中并没有low-level const这种说法，是该书作者为了解释自己造出的词。@hearts zh的回答 - 知乎 <a href="https://www.zhihu.com/question/24785843/answer/128752641">https://www.zhihu.com/question/24785843/answer/128752641</a></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++">    <span class="kt">int</span> <span class="n">i</span>               <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="k">const</span> <span class="n">p1</span>       <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>  <span class="c1">//不能改变p1的值,这是一个顶层const
+</span><span class="c1"></span>    <span class="k">const</span> <span class="kt">int</span> <span class="n">c1</span>        <span class="o">=</span> <span class="mi">41</span><span class="p">;</span>  <span class="c1">//不能改变c1的值,这是一个顶层const
+</span><span class="c1"></span>    <span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">p2</span>       <span class="o">=</span> <span class="o">&amp;</span><span class="n">c1</span><span class="p">;</span> <span class="c1">//允许改变p2的值,这是一个底层const
+</span><span class="c1"></span>    <span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="k">const</span> <span class="n">p3</span> <span class="o">=</span> <span class="n">p2</span><span class="p">;</span>  <span class="c1">//右侧的const是顶层const,左侧的const是底层const
+</span><span class="c1"></span>    <span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">r</span>        <span class="o">=</span> <span class="n">c1</span><span class="p">;</span>  <span class="c1">//用于声明引用的const都是底层const
+</span><span class="c1"></span>                               <span class="c1">//引用本身就包含顶层const含义,必须被初始化且不可以被重置reset
+</span><span class="c1"></span>                               <span class="c1">//一种常见的引用的实现是常量指针
+</span><span class="c1"></span>
+    <span class="k">using</span> <span class="n">T</span>    <span class="o">=</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="p">;</span> <span class="c1">//如果T 是const char *
+</span><span class="c1"></span>    <span class="k">const</span> <span class="n">T</span> <span class="n">p3</span> <span class="o">=</span> <span class="s">&#34;Something&#34;</span><span class="p">;</span> <span class="c1">//const T 其实等同于 const char * const
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id="字面类型literaltype">字面类型(LiteralType)</h2>
+<p>首先来看C++中的基本类型,如下</p>
+<ul>
+<li>Object types
+<ul>
+<li>Scalars
+<ol>
+<li>arithmetic (integral, float)</li>
+<li>pointers: <code>T *</code> for any type <code>T</code></li>
+<li>enum</li>
+<li>pointer-to-member</li>
+<li><code>nullptr_t</code></li>
+</ol>
+</li>
+<li>Arrays: <code>T[]</code> or <code>T[N]</code> for any complete, non-reference type <code>T</code></li>
+<li>Classes: <code>class Foo</code> or <code>struct Bar</code>
+<ol>
+<li>Trivial classes</li>
+<li>Aggregates</li>
+<li>POD classes</li>
+<li>(etc. etc.)</li>
+</ol>
+</li>
+<li>Unions: <code>union Zip</code></li>
+</ul>
+</li>
+<li>References types: <code>T &amp;</code>, <code>T &amp;&amp;</code> for any object or free-function type <code>T</code></li>
+<li>Function types
+<ul>
+<li>Free functions: <code>R foo(Arg1, Arg2, ...)</code></li>
+<li>Member functions: <code>R T::foo(Arg1, Arg2, ...)</code></li>
+</ul>
+</li>
+<li><code>void</code></li>
+</ul>
+<blockquote>
+<p><a href="https://stackoverflow.com/a/14822074/11803107">https://stackoverflow.com/a/14822074/11803107</a></p>
+</blockquote>
+<p><a href="https://zh.cppreference.com/w/cpp/named_req/LiteralType"><strong>字面类型是下列之一：</strong></a></p>
+<ol>
+<li>标量类型(scalar type)</li>
+<li>引用类型(reference type)</li>
+<li>字面类型的数组；</li>
+<li>&hellip;</li>
+</ol>
+<h2 id="constexpr">constexpr</h2>
+<blockquote>
+<p><a href="https://zh.cppreference.com/w/cpp/language/constexpr">https://zh.cppreference.com/w/cpp/language/constexpr</a></p>
+</blockquote>
+<p><code>constexpr</code> 说明符声明 可以 在编译时求 得 函数 或变量的 值。</p>
+<p>用于对象或<code>非静态成员函数 (C++14 前)</code>声明的 constexpr 说明符蕴含 const。</p>
+<p>用于函数声明的 constexpr 说明符或<code> static成员变量 (C++17 起)</code>蕴含 inline。</p>
+<p><strong>const 变量</strong>有两个含义,一个是只读,一个是常量,constexpr将常量这一含义提取出来扩充了,因此const 和 constexpr 修饰变量时,有时含义是相同的.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="k">const</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> 
+<span class="k">constexpr</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>    <span class="c1">//以上含义相同,均为常量,当然也是只读
+</span><span class="c1"></span>
+<span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">d</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>     <span class="c1">//这里d不是常量了,const表示只读含义.
+</span><span class="c1"></span><span class="k">constexpr</span> <span class="kt">int</span> <span class="n">e</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//编译报错
+</span></code></pre></td></tr></table>
+</div>
+</div><p><strong>constexpr 变量</strong> :</p>
+<ol>
+<li>其类型必须是<a href="https://zh.cppreference.com/w/cpp/named_req/LiteralType"><em>字面类型</em> <em>(LiteralType)</em> </a>。</li>
+<li>它必须被立即初始化</li>
+<li>其初始化的<a href="https://zh.cppreference.com/w/cpp/language/eval_order">全表达式</a>，包括所有隐式转换、构造函数调用等，都必须是<a href="https://zh.cppreference.com/w/cpp/language/constant_expression">常量表达式</a></li>
+</ol>
+<p><strong>constexpr 函数</strong> :</p>
+<ol>
+<li>其返回类型（若存在）必须是<a href="https://zh.cppreference.com/w/cpp/named_req/LiteralType"><em>字面类型</em> <em>(LiteralType)</em></a></li>
+<li>其每个参数都必须是<a href="https://zh.cppreference.com/w/cpp/named_req/LiteralType"><em>字面类型</em> <em>(LiteralType)</em></a></li>
+<li>若函数或函数模板的任何声明拥有 <code>constexpr</code> 说明符，则每个声明必须都含有该说明符</li>
+<li>&hellip; (C++14极大的拓宽了限制)</li>
+</ol>
+<p><a href="https://youtu.be/fZjYCQ8dzTc">CppCon 2015: Scott Schurr “constexpr: Introduction”</a></p>
+<ul>
+<li>Compile-time floating  point calculations might not have the same results as runtime calculations.
+<ul>
+<li>the GCC folks have been working hard at trying to keep those aligned.</li>
+</ul>
+</li>
+<li>In C++11,Body is one compound statement.<code>{return expression;}</code>我们可以使用三目运算符去递归</li>
+<li>throw in constexpr ?
+<ul>
+<li>Compile error if throw is evalated during compilation</li>
+<li>Legitimate throw if error during runtime</li>
+</ul>
+</li>
+<li>C++11 constexpr Constructor
+<ul>
+<li>&hellip;</li>
+<li><a href="https://youtu.be/fZjYCQ8dzTc?list=WL&amp;t=2887">https://youtu.be/fZjYCQ8dzTc?list=WL&amp;t=2887</a></li>
+</ul>
+</li>
+<li>C++ 14 constexpr says what you can&rsquo;t do and C++ 11 says what you can do.
+<ul>
+<li>&hellip;</li>
+<li><a href="https://youtu.be/fZjYCQ8dzTc?list=WL&amp;t=2962">https://youtu.be/fZjYCQ8dzTc?list=WL&amp;t=2962</a></li>
+</ul>
+</li>
+<li>constexpr Limits
+<ul>
+<li>Recursive constexpr function invocations : 512</li>
+<li>Full-expressions evaluated within a core constant expression : 1,048,576</li>
+<li>Those are recommendations for minimum values and actual limits are up to your compiler.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>GCC有一个编译器内建函数<code> __builtin_constant_p()</code>,可以检测传入的参数表达式是否为编译器可以在编译时做常量折叠的表达式。请参考官方文档的描述：<a href="https://gcc.gnu.org/onlinedocs/gcc/Other-Builtins.html#index-g_t_005f_005fbuiltin_005fconstant_005fp-4316">Other Builtins - Using the GNU Compiler Collection (GCC)</a>  Clang也支持这个编译器内建函数。</p>
+</blockquote>
+<h2 id="auto-auto-auto">auto auto&amp; auto&amp;&amp;</h2>
+<h2 id="虚函数virtual">虚函数virtual</h2>
+
     </article>
     
     
@@ -2001,7 +2174,7 @@ if (!doNotTrack) {
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-21 10:15:17.8690451 \u002b0800 CST',
+    id: '2021-01-22 00:03:41.8608314 \u002b0800 CST',
     title: '重学C\u002b\u002b',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -2348,30 +2521,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title" data-ani="true">目录</h6>
-    
-      <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
-    <nav id="TableOfContents"></nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
@@ -2379,7 +2528,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"inner\"");
+  var tocPosition = JSON.parse("\"outer\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -2570,7 +2719,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
@@ -3126,6 +3275,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+    
+      
+        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr" data-ani="true">
+          <h6 class="toc__title toc__title--outer" data-ani="true">目录</h6>
+          
+          <label class="switch" data-ani="true">
+            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="true">
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#static---inline">static /  inline</a></li>
+    <li><a href="#顶层底层const">顶层/底层const</a></li>
+    <li><a href="#字面类型literaltype">字面类型(LiteralType)</a></li>
+    <li><a href="#constexpr">constexpr</a></li>
+    <li><a href="#auto-auto-auto">auto auto&amp; auto&amp;&amp;</a></li>
+    <li><a href="#虚函数virtual">虚函数virtual</a></li>
+  </ul>
+</nav>
+        </div>
+      
+    
   
 </div>
 
