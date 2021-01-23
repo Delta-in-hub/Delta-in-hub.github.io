@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 22 Jan 2021 00:03:41 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jan 2021 01:04:51 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/stackoverflow/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,9 +25,9 @@
       <item>
         <title>重学C&#43;&#43;</title>
         <link>https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c&#43;&#43;/</link>
-        <pubDate>Fri, 22 Jan 2021 00:03:41 +0800</pubDate>
+        <pubDate>Sun, 24 Jan 2021 01:04:51 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Fri, 22 Jan 2021 00:03:41 +0800</atom:modified>
+        <atom:modified>Sun, 24 Jan 2021 01:04:51 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c&#43;&#43;/</guid>
         <description>重学C++ C++ Primer 5th 现代 C++ 教程：高速上手 C++11/14/17/20 学习书籍资料如上 + Google It static / inline static inline 顶层/底层const 简单说，顶层const是指“指针本身是常量”，而底</description>
         
@@ -67,9 +67,9 @@
       <item>
         <title>Coding随想拾遗与语言学习笔记</title>
         <link>https://www.deltablog.xyz/posts/codingthoughts/</link>
-        <pubDate>Thu, 21 Jan 2021 10:16:35 +0800</pubDate>
+        <pubDate>Sun, 24 Jan 2021 00:18:03 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Thu, 21 Jan 2021 10:16:35 +0800</atom:modified>
+        <atom:modified>Sun, 24 Jan 2021 00:18:03 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/codingthoughts/</guid>
         <description>Coding随想拾遗 有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章. 还有许多分散着之前的文章里,找</description>
         

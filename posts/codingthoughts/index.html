@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,Stackoverflow,CppReference">
 
-<meta name="created" content="2021-01-21T10:16:35&#43;0800">
-<meta name="modified" content="2021-01-21T10:16:35&#43;0800">
-<meta property="article:published_time" content="2021-01-21T10:16:35&#43;0800">
+<meta name="created" content="2021-01-24T00:18:03&#43;0800">
+<meta name="modified" content="2021-01-24T00:18:03&#43;0800">
+<meta property="article:published_time" content="2021-01-24T00:18:03&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "Coding随想拾遗与语言学习笔记",
-    "datePublished": "2021-01-21T10:16:35+08:00",
-    "dateModified": "2021-01-21T10:16:35+08:00",
+    "datePublished": "2021-01-24T00:18:03+08:00",
+    "dateModified": "2021-01-24T00:18:03+08:00",
     "url" : "https://www.deltablog.xyz/posts/codingthoughts/",
     "description": "🌟有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章.敲代码时想到什么,遇到什么问题,就搜集整理一下,放到这篇文章里.✨🌟作为一个致力于成为C++语言律师的人,我也会在本篇文章记录C++学习的感想.✨",
     "keywords": ["C|C++","Stackoverflow","CppReference"],
@@ -1722,7 +1722,7 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月21日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年01月24日 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;15&nbsp;分钟 </span>
   
@@ -3784,7 +3784,23 @@ C.UTF-8
 <p>以上结合https://stackoverflow.com/a/45710235/11803107中的例子理解,注意看评论 (Your answer is an illustrative post of why language makes such inline functions to be undefined behavior. 很好地演示了inline重复定义是未定义行为).</p>
 <p>众所周知,一个函数默认是<code>extern</code>的,但C语言为<code>inline</code>函数搞了一个特殊规则,即若成功内联,则不导出外部符号(和<code>static</code>相似),C++则导出外部符号,但是允许重复的相同定义(如上的1).</p>
 <p><a href="https://zh.cppreference.com/w/cpp/language/inline">https://zh.cppreference.com/w/cpp/language/inline</a></p>
+<h2 id="可能是最长的c变量声明">可能是最长的C++变量声明</h2>
+<blockquote>
+<p><a href="https://shaharmike.com/cpp/longest-var-decl/">https://shaharmike.com/cpp/longest-var-decl/</a></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="k">static</span> <span class="k">thread_local</span> <span class="kr">inline</span> <span class="k">constexpr</span> <span class="k">volatile</span> <span class="k">const</span> <span class="nf">decltype</span><span class="p">(</span><span class="k">typeid</span><span class="p">(</span><span class="k">const</span> <span class="k">volatile</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span><span class="p">).</span><span class="n">name</span><span class="p">())</span> <span class="o">*</span> <span class="k">const</span> <span class="n">a</span><span class="p">{};</span>
 
+<span class="k">alignas</span><span class="p">(</span><span class="k">alignof</span><span class="p">(</span><span class="k">decltype</span><span class="p">(</span><span class="k">typeid</span><span class="p">(</span><span class="k">const</span> <span class="k">volatile</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span><span class="p">))))</span> <span class="k">static</span> <span class="k">thread_local</span> <span class="kr">inline</span> <span class="k">constexpr</span> <span class="k">volatile</span> <span class="k">const</span> <span class="k">decltype</span><span class="p">(</span><span class="k">typeid</span><span class="p">(</span><span class="k">const</span> <span class="k">volatile</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span><span class="p">).</span><span class="n">name</span><span class="p">())</span> <span class="o">*</span> <span class="k">const</span> <span class="n">b</span><span class="p">{};</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     
     
@@ -4042,7 +4058,7 @@ C.UTF-8
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-21 10:16:35.1353954 \u002b0800 CST',
+    id: '2021-01-24 00:18:03.5215391 \u002b0800 CST',
     title: 'Coding随想拾遗与语言学习笔记',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -5186,6 +5202,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#c-1">C++</a></li>
       </ul>
     </li>
+    <li><a href="#可能是最长的c变量声明">可能是最长的C++变量声明</a></li>
   </ul>
 </nav>
         </div>
