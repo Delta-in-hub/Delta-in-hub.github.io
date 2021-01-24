@@ -14,13 +14,55 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 24 Jan 2021 01:04:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jan 2021 20:57:50 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Coding随想拾遗与语言学习笔记</title>
+        <link>https://www.deltablog.xyz/posts/codingthoughts/</link>
+        <pubDate>Sun, 24 Jan 2021 20:57:50 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Sun, 24 Jan 2021 20:57:50 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/codingthoughts/</guid>
+        <description>Coding随想拾遗 有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章. 还有许多分散着之前的文章里,找</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+            
+              <category>Stackoverflow</category>
+            
+          
+            
+              <category>CppReference</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Problems</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>重学C&#43;&#43;</title>
@@ -58,48 +100,6 @@
           
             
               <category>Coding</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Coding随想拾遗与语言学习笔记</title>
-        <link>https://www.deltablog.xyz/posts/codingthoughts/</link>
-        <pubDate>Sun, 24 Jan 2021 00:18:03 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Sun, 24 Jan 2021 00:18:03 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/codingthoughts/</guid>
-        <description>Coding随想拾遗 有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章. 还有许多分散着之前的文章里,找</description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>C|C&#43;&#43;</category>
-            
-          
-            
-              <category>Stackoverflow</category>
-            
-          
-            
-              <category>CppReference</category>
-            
-          
-        
-        
-          
-            
-              <category>Coding</category>
-            
-          
-            
-              <category>Problems</category>
             
           
         
