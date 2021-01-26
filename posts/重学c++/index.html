@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,CPP,Stackoverflow,CppReference">
 
-<meta name="created" content="2021-01-24T01:04:51&#43;0800">
-<meta name="modified" content="2021-01-24T01:04:51&#43;0800">
-<meta property="article:published_time" content="2021-01-24T01:04:51&#43;0800">
+<meta name="created" content="2021-01-26T14:52:57&#43;0800">
+<meta name="modified" content="2021-01-26T14:52:57&#43;0800">
+<meta property="article:published_time" content="2021-01-26T14:52:57&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "重学C++",
-    "datePublished": "2021-01-24T01:04:51+08:00",
-    "dateModified": "2021-01-24T01:04:51+08:00",
+    "datePublished": "2021-01-26T14:52:57+08:00",
+    "dateModified": "2021-01-26T14:52:57+08:00",
     "url" : "https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c++/",
     "description": "重学C++ C++ Primer 5th 现代 C++ 教程：高速上手 C++11/14/17/20 学习书籍资料如上 + Google It static / inline static inline 顶层/底层const 简单说，顶层const是指“指针本身是常量”，而底",
     "keywords": ["C|C++","CPP","Stackoverflow","CppReference"],
@@ -1722,9 +1722,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月24日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年01月26日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;12&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;13&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -2520,7 +2520,10 @@ destruct: 1         // 程序结束，析构变量 aa
 </blockquote>
 <p><strong>与三之法则不同的是，不提供移动构造函数和移动赋值运算符通常不是错误，但会导致失去优化机会。</strong></p>
 <h2 id="auto--decltype">auto | decltype</h2>
-<p><strong>auto</strong></p>
+<h3 id="auto"><strong>auto</strong></h3>
+<blockquote>
+<p><a href="https://zh.cppreference.com/w/cpp/language/auto">https://zh.cppreference.com/w/cpp/language/auto</a></p>
+</blockquote>
 <ul>
 <li>
 <p>以引用对象的值作为auto的类型</p>
@@ -2542,6 +2545,8 @@ destruct: 1         // 程序结束，析构变量 aa
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-C++" data-lang="C++"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">r</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
@@ -2554,12 +2559,42 @@ destruct: 1         // 程序结束，析构变量 aa
 </span><span class="c1"></span>
 <span class="k">auto</span> <span class="o">&amp;</span><span class="n">g</span> <span class="o">=</span> <span class="n">ci</span><span class="p">;</span> <span class="c1">//g是const int&amp;,绑定到ci
 </span><span class="c1"></span><span class="k">const</span> <span class="k">auto</span> <span class="o">&amp;</span><span class="n">j</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span><span class="c1">//常量引用可以绑定到字面值
-</span></code></pre></td></tr></table>
+</span><span class="c1"></span>
+<span class="k">auto</span> <span class="o">&amp;&amp;</span> <span class="err">是万能引用</span><span class="p">,</span><span class="err">可以绑定左值或者右值</span><span class="p">,</span><span class="err">它是</span> <span class="n">universal</span> <span class="n">reference</span>
+</code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
-<p>auto总是去除引用和顶层修饰符</p>
-<p><strong>decltype</strong></p>
+<blockquote>
+<p><a href="https://stackoverflow.com/questions/29859796/c-auto-vs-auto">https://stackoverflow.com/questions/29859796/c-auto-vs-auto</a></p>
+</blockquote>
+<ul>
+<li><code>auto</code>
+<ul>
+<li>无视引用与CV(const and volatile)限定符</li>
+<li>Choose <code>auto x</code> when you want to work with copies.</li>
+<li>For example, if you have <code>const int&amp; f(){...}</code> then <code>auto x = f();</code> deduces <code>x</code> as <code>int</code>, and <strong>not</strong> <code>const int&amp;</code>.</li>
+</ul>
+</li>
+<li><code>auto &amp;</code>
+<ul>
+<li>不会去掉CV限定符,推导的类型可能会是<code>const</code>限定的</li>
+<li>始终得到引用类型</li>
+<li>Choose <code>auto &amp;x</code> when you want to work with original items and <em>may modify them</em>. 如果不想修改,使用<code>cosnt auto&amp;</code></li>
+</ul>
+</li>
+<li><code>auto &amp;&amp;</code>
+<ul>
+<li>万能引用,可以绑定到左值或者右值</li>
+<li>不会去掉CV限定符,推导的类型可能会是<code>const</code>限定的</li>
+</ul>
+</li>
+</ul>
+<p>如果想要推导出原有的值类型与CV限定符,使用<code>decltype(auto)</code></p>
+<h3 id="decltype"><strong>decltype</strong></h3>
+<blockquote>
+<p><a href="https://zh.cppreference.com/w/cpp/language/decltype">https://zh.cppreference.com/w/cpp/language/decltype</a></p>
+</blockquote>
 <ul>
 <li>
 <p>希望从表达式的类型推导出变量的类型,但是不想用该表达式的值初始化变量</p>
@@ -2568,19 +2603,17 @@ destruct: 1         // 程序结束，析构变量 aa
 </ul>
 </li>
 <li>
-<p>如果是个变量，那么类型就是声明这个变量时的类型</p>
-</li>
-<li>
-<p><code>decltype(variable)</code>结果只有当variable本身是引用时才是引用</p>
-</li>
-<li>
-<p>如果是个表达式(将变量加括号也看作表达式)，那么就看表达式的计算结果，如果结果是个左值，那么就是一个引用</p>
-</li>
-<li>
-<p>如果表达式是解引用操作,得到引用类型</p>
+<p>如果是个变量，那么类型就是声明这个变量时的类</p>
 <ul>
-<li>单目 * 操作符返回的是引用  <a href="https://www.zhihu.com/question/53708329/answer/136174495">@邱昊宇 - 知乎</a></li>
-<li>解引用运算符生成左值,取地址运算符生成右值</li>
+<li><code>decltype(variable)</code>结果只有当variable本身是引用时才是引用</li>
+</ul>
+</li>
+<li>
+<p>如果是个表达式(将变量加括号也看作表达式)</p>
+<ul>
+<li>若 <em>表达式</em> 的<a href="https://zh.cppreference.com/w/cpp/language/value_category">值类别</a>为<em>亡值</em>，则 <code>decltype</code> 产生 <code>T&amp;&amp;</code>；</li>
+<li>若 <em>表达式</em> 的值类别为<em>左值</em>，则 <code>decltype</code> 产生 <code>T&amp;</code>；</li>
+<li>若 <em>表达式</em> 的值类别为<em>纯右值</em>，则 <code>decltype</code> 产生 <code>T</code>。</li>
 </ul>
 </li>
 <li>
@@ -2603,15 +2636,45 @@ destruct: 1         // 程序结束，析构变量 aa
 <pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">42</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span> <span class="p">,</span><span class="o">&amp;</span><span class="n">r</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
 <span class="c1">//一下两种类型是int
 </span><span class="c1"></span><span class="k">decltype</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="k">decltype</span><span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span>  
+<span class="k">decltype</span><span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span>
 <span class="c1">//以下四种结果都是int&amp;
-</span><span class="c1"></span><span class="k">decltype</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-<span class="k">decltype</span><span class="p">(</span><span class="o">*&amp;</span><span class="n">i</span><span class="p">)</span>
+</span><span class="c1"></span><span class="k">decltype</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>   <span class="c1">//r 类型是引用
+</span><span class="c1"></span><span class="k">decltype</span><span class="p">(</span><span class="o">*&amp;</span><span class="n">i</span><span class="p">)</span> <span class="c1">//单目运算符* 返回左值
+</span><span class="c1"></span><span class="k">decltype</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span>
 <span class="k">decltype</span><span class="p">((</span><span class="n">i</span><span class="p">))</span>
-<span class="k">decltype</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
+</div><h3 id="decltypeauto">decltype(auto)</h3>
+<blockquote>
+<p><a href="https://stackoverflow.com/a/21369170/11803107">https://stackoverflow.com/a/21369170/11803107</a></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">&amp;&amp;</span> <span class="n">f</span><span class="p">();</span>
+
+<span class="n">expression</span>    <span class="k">auto</span>       <span class="k">decltype</span><span class="p">(</span><span class="k">auto</span><span class="p">)</span>
+<span class="o">----------------------------------------</span>
+<span class="mi">10</span>            <span class="kt">int</span>        <span class="kt">int</span>
+<span class="n">x</span>             <span class="kt">int</span>        <span class="kt">int</span>
+<span class="p">(</span><span class="n">x</span><span class="p">)</span>           <span class="kt">int</span>        <span class="kt">int</span> <span class="o">&amp;</span>
+<span class="n">f</span><span class="p">()</span>           <span class="kt">int</span>        <span class="kt">int</span> <span class="o">&amp;&amp;</span>
+</code></pre></td></tr></table>
 </div>
+</div><p>Use auto when you want to return a prvalue, and decltype(auto) when you want to forward the returned expression preserving its value category.</p>
+<p>使用的是<code>decltype</code>的推导规则,保持原有值类型与CV限定符.</p>
+
     </article>
     
     
@@ -2844,21 +2907,14 @@ destruct: 1         // 程序结束，析构变量 aa
 <nav class="pagination-single">
   
     
-      <a href="https://www.deltablog.xyz/posts/datastructure/" class="pagination-single__left">
+      <a href="https://www.deltablog.xyz/posts/codingthoughts/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">数据结构的学习</div>      
+        <div class="pagination-single__left-title">Coding随想拾遗与语言学习笔记</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://www.deltablog.xyz/posts/codingthoughts/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Coding随想拾遗与语言学习笔记</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2869,7 +2925,7 @@ destruct: 1         // 程序结束，析构变量 aa
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-24 01:04:51.3561038 \u002b0800 CST',
+    id: '2021-01-26 14:52:57.6744774 \u002b0800 CST',
     title: '重学C\u002b\u002b',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -4001,7 +4057,13 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#三五零之法则">三/五/零之法则</a></li>
       </ul>
     </li>
-    <li><a href="#auto--decltype">auto | decltype</a></li>
+    <li><a href="#auto--decltype">auto | decltype</a>
+      <ul>
+        <li><a href="#auto"><strong>auto</strong></a></li>
+        <li><a href="#decltype"><strong>decltype</strong></a></li>
+        <li><a href="#decltypeauto">decltype(auto)</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
