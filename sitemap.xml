@@ -8,48 +8,83 @@
   </url>
   
   <url>
+    <loc>https://www.deltablog.xyz/tags/acm/</loc>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/</loc>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.deltablog.xyz/categories/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/codeforces/</loc>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/categories/coding/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/posts/codingthoughts/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/cppreference/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/tags/cc&#43;&#43;/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/oj/</loc>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/posts/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/categories/problems/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/tags/stackoverflow/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/tags/</loc>
-    <lastmod>2021-02-01T00:07:10+08:00</lastmod>
+    <lastmod>2021-02-02T23:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/acm/</loc>
+    <lastmod>2021-02-02T23:11:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</loc>
+    <lastmod>2021-02-02T23:11:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/categories/vjudge/</loc>
+    <lastmod>2021-02-02T23:11:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/posts/codingthoughts/</loc>
+    <lastmod>2021-02-02T21:48:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/cppreference/</loc>
+    <lastmod>2021-02-02T21:48:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.deltablog.xyz/tags/stackoverflow/</loc>
+    <lastmod>2021-02-02T21:48:45+08:00</lastmod>
   </url>
   
   <url>
@@ -138,28 +173,13 @@
   </url>
   
   <url>
-    <loc>https://www.deltablog.xyz/categories/acm/</loc>
-    <lastmod>2020-12-09T17:16:43+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.deltablog.xyz/posts/graphandsearch/</loc>
-    <lastmod>2020-12-09T17:16:43+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/categories/vjudge/</loc>
     <lastmod>2020-12-09T17:16:43+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.deltablog.xyz/posts/questionsabouttrainingandindividualcompetitions/</loc>
     <lastmod>2020-12-09T16:56:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</loc>
-    <lastmod>2020-12-09T16:42:25+08:00</lastmod>
   </url>
   
   <url>

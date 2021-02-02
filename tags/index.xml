@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 01 Feb 2021 00:07:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Feb 2021 23:52:16 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,30 @@
 
       
       <item>
-        <title>CppReference</title>
-        <link>https://www.deltablog.xyz/tags/cppreference/</link>
-        <pubDate>Mon, 01 Feb 2021 00:07:10 +0800</pubDate>
+        <title>ACM</title>
+        <link>https://www.deltablog.xyz/tags/acm/</link>
+        <pubDate>Tue, 02 Feb 2021 23:52:16 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         
-        <guid>https://www.deltablog.xyz/tags/cppreference/</guid>
+        <guid>https://www.deltablog.xyz/tags/acm/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CodeForces</title>
+        <link>https://www.deltablog.xyz/tags/codeforces/</link>
+        <pubDate>Tue, 02 Feb 2021 23:52:16 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/codeforces/</guid>
         <description></description>
         
         <dc:creator>Delta</dc:creator>
@@ -43,7 +61,7 @@
       <item>
         <title>C|C&#43;&#43;</title>
         <link>https://www.deltablog.xyz/tags/cc&#43;&#43;/</link>
-        <pubDate>Mon, 01 Feb 2021 00:07:10 +0800</pubDate>
+        <pubDate>Tue, 02 Feb 2021 23:52:16 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         
         <guid>https://www.deltablog.xyz/tags/cc&#43;&#43;/</guid>
@@ -59,9 +77,45 @@
       </item>
       
       <item>
+        <title>OJ</title>
+        <link>https://www.deltablog.xyz/tags/oj/</link>
+        <pubDate>Tue, 02 Feb 2021 23:52:16 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/oj/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CppReference</title>
+        <link>https://www.deltablog.xyz/tags/cppreference/</link>
+        <pubDate>Tue, 02 Feb 2021 21:48:45 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/cppreference/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Stackoverflow</title>
         <link>https://www.deltablog.xyz/tags/stackoverflow/</link>
-        <pubDate>Mon, 01 Feb 2021 00:07:10 +0800</pubDate>
+        <pubDate>Tue, 02 Feb 2021 21:48:45 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
         
         <guid>https://www.deltablog.xyz/tags/stackoverflow/</guid>

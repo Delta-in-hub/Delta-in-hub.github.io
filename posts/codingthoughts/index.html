@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,Stackoverflow,CppReference">
 
-<meta name="created" content="2021-02-01T00:07:10&#43;0800">
-<meta name="modified" content="2021-02-01T00:07:10&#43;0800">
-<meta property="article:published_time" content="2021-02-01T00:07:10&#43;0800">
+<meta name="created" content="2021-02-02T21:48:45&#43;0800">
+<meta name="modified" content="2021-02-02T21:48:45&#43;0800">
+<meta property="article:published_time" content="2021-02-02T21:48:45&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "Coding随想拾遗与语言学习笔记",
-    "datePublished": "2021-02-01T00:07:10+08:00",
-    "dateModified": "2021-02-01T00:07:10+08:00",
+    "datePublished": "2021-02-02T21:48:45+08:00",
+    "dateModified": "2021-02-02T21:48:45+08:00",
     "url" : "https://www.deltablog.xyz/posts/codingthoughts/",
     "description": "🌟有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章.敲代码时想到什么,遇到什么问题,就搜集整理一下,放到这篇文章里.✨🌟作为一个致力于成为C++语言律师的人,我也会在本篇文章记录C++学习的感想.✨",
     "keywords": ["C|C++","Stackoverflow","CppReference"],
@@ -1722,9 +1722,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年02月01日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年02月02日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;18&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;15&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -3801,372 +3801,7 @@ C.UTF-8
 <span class="k">alignas</span><span class="p">(</span><span class="k">alignof</span><span class="p">(</span><span class="k">decltype</span><span class="p">(</span><span class="k">typeid</span><span class="p">(</span><span class="k">const</span> <span class="k">volatile</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span><span class="p">))))</span> <span class="k">static</span> <span class="k">thread_local</span> <span class="kr">inline</span> <span class="k">constexpr</span> <span class="k">volatile</span> <span class="k">const</span> <span class="k">decltype</span><span class="p">(</span><span class="k">typeid</span><span class="p">(</span><span class="k">const</span> <span class="k">volatile</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span><span class="p">).</span><span class="n">name</span><span class="p">())</span> <span class="o">*</span> <span class="k">const</span> <span class="n">b</span><span class="p">{};</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="stl">STL</h2>
-<h3 id="前缀和-partial_sum---差分-adjacent_difference">前缀和 partial_sum  | 差分 adjacent_difference</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++">	<span class="cp">#include</span> <span class="cpf">&lt;numeric&gt;</span><span class="cp">
-</span><span class="cp"></span>	<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">arr</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
-
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">prefix</span><span class="p">;</span>
-    <span class="n">partial_sum</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">back_inserter</span><span class="p">(</span><span class="n">prefix</span><span class="p">));</span>
-	<span class="n">adjacent_difference</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">back_inserter</span><span class="p">(</span><span class="n">prefix</span><span class="p">));</span>
-	<span class="c1">//或者
-</span><span class="c1"></span>    <span class="n">prefix</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-    <span class="n">partial_sum</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">prefix</span><span class="p">.</span><span class="n">begin</span><span class="p">());</span>
-	<span class="n">adjacent_difference</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">prefix</span><span class="p">.</span><span class="n">begin</span><span class="p">());</span>
-</code></pre></td></tr></table>
 </div>
-</div><h3 id="逆序排序">逆序排序</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">arr</span><span class="p">;</span>
-<span class="n">sort</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="n">greater</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">())</span> 
-<span class="n">sort</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="n">greater</span><span class="o">&lt;&gt;</span><span class="p">());</span> <span class="c1">//C++ 14
-</span><span class="c1"></span>
-<span class="n">sort</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">rbegin</span><span class="p">(),</span><span class="n">arr</span><span class="p">.</span><span class="n">rend</span><span class="p">());</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="阶乘-tgamma">阶乘 tgamma</h3>
-<blockquote>
-<p>若 <code>arg</code> 为自然数，则 std::tgamma(arg) 为 <code>arg-1</code> 的阶乘。 -&gt; double</p>
-</blockquote>
-<p>但是计算过程不能取模,太大转int会爆</p>
-<h2 id="algorithm">Algorithm</h2>
-<h3 id="快速乘--快速幂">快速乘 | 快速幂</h3>
-<blockquote>
-<p><a href="https://zhuanlan.zhihu.com/p/95902286">https://zhuanlan.zhihu.com/p/95902286</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/24831082">https://zhuanlan.zhihu.com/p/24831082</a></p>
-</blockquote>
-<p>快速乘并不快,为了在运算过程取模.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="nf">qpow</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">*</span> <span class="n">a</span><span class="p">;</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">;</span>
-        <span class="n">n</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">qpow</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">*</span> <span class="n">a</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">n</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">qmul</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">b</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">b</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="p">(</span><span class="n">ans</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">b</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>准确讲,以上都应该是<code>unsigned</code></p>
-<p>快速乘可以考虑使用<code>__int128_t</code>代替</p>
-<h3 id="乘法逆元">乘法逆元</h3>
-<blockquote>
-<p><a href="https://www.cnblogs.com/mjtcn/p/7241896.html">https://www.cnblogs.com/mjtcn/p/7241896.html</a></p>
-<p>对于个人的理解逆元，逆元是在运算除时，可以变成乘，方便计算，像上面一样，a/b(mod p)就可以变成a*b-1，这也就是逆元的本质，必须要在<strong>模</strong>的意义下才有效。</p>
-<p>运算a/b时，我们除以b就相当于乘以1/b，这是个分数，不利于计算，所以我们就找到了一个整数，b的逆元，比如计算12/3（mod 7），这是个除法，所以我们可以这样12*(1/3)，虽然是乘法了，但是有分数，所以找一个整数x，使得 3x≡1(mod 7)，x=5，即模 7意义下3的逆元是5，然后我们乘以这个逆元，12*5 = 60,60 mod 7 = 4，诶，12/3 = 4，相等啊，这就是上面所说的性质</p>
-</blockquote>
-<p><strong>如果模数是质数,可以利用费马小定理,求逆元</strong></p>
-<p>$p是质数,a是任意自然数,则a^p\equiv a \mod p$  此为费马小定理</p>
-<p>$即 a^{p-1} \equiv 1 \mod p $</p>
-<p>由$ax\equiv 1 \mod p$</p>
-<p>-&gt; $ ax \equiv a^{p-1} \mod p$</p>
-<p>-&gt; $x \equiv a ^{p-2} \mod p$</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="nf">qpow</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">*</span> <span class="n">a</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">n</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">inv</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">//mod是质数,利用费马小定理
-</span><span class="c1"></span>    <span class="k">return</span> <span class="n">qpow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">mod</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">mod</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>也可以利用拓展欧几里得</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">void</span> <span class="nf">exgcd</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">y</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">exgcd</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
-    <span class="n">y</span> <span class="o">-=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span> <span class="o">*</span> <span class="n">x</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">inv</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">//要求gcd(a,mod) == 1
-</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
-    <span class="n">exgcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">mod</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">%</span> <span class="n">mod</span> <span class="o">+</span> <span class="n">mod</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>线性求逆元</strong></p>
-<p>求出$1,2,3,&hellip;,n$ 中每个数关于 $p$的逆元。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="n">_inv</span><span class="p">[</span><span class="n">MAXN</span><span class="p">];</span>
-<span class="kt">void</span> <span class="nf">INV</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">p</span><span class="p">)</span> <span class="c1">//线性求1到a关于p的逆元
-</span><span class="c1"></span><span class="p">{</span>
-    <span class="n">_inv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">_inv</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">p</span> <span class="o">/</span> <span class="n">i</span><span class="p">))</span> <span class="o">*</span> <span class="n">_inv</span><span class="p">[</span><span class="n">p</span> <span class="o">%</span> <span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="n">p</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>欧拉定理求逆元</strong></p>
-<p>&hellip;</p>
-<h3 id="组合数">组合数</h3>
-<blockquote>
-<p><a href="https://blog.csdn.net/martayang/article/details/54743623">https://blog.csdn.net/martayang/article/details/54743623</a></p>
-<p><a href="https://leetcode-cn.com/circle/article/GzfBeQ/">https://leetcode-cn.com/circle/article/GzfBeQ/</a></p>
-</blockquote>
-<p>$C_n^k \mod E = \frac{n!}{k! \times (n-k)!} \mod E = ((n! \mod E) \times(\frac{1}{k!} \mod E)\times (\frac{1}{(n-k)!}\mod E))\mod E $<br />
-其中第二,三项使用乘法逆元求出</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="nf">qpow</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">*</span> <span class="n">a</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-        <span class="n">n</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">inv</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">//mod是质数,利用费马小定理
-</span><span class="c1"></span>    <span class="k">return</span> <span class="n">qpow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">mod</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">mod</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">fact</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">*</span> <span class="n">i</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">C</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mod</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">)</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="n">m</span><span class="p">)</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">mod</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span> <span class="o">*</span> <span class="n">inv</span><span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">mod</span><span class="p">),</span> <span class="n">mod</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span> <span class="o">*</span> <span class="n">inv</span><span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">m</span><span class="p">,</span> <span class="n">mod</span><span class="p">),</span> <span class="n">mod</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span><span class="p">)</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">//Lucas 定理,当n和m较大,明显优化
-</span><span class="c1"></span><span class="kt">int</span> <span class="nf">Lucas</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="kt">int</span> <span class="n">p</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">m</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">return</span> <span class="n">C</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">p</span><span class="p">,</span> <span class="n">m</span> <span class="o">%</span> <span class="n">p</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">*</span> <span class="n">Lucas</span><span class="p">(</span><span class="n">n</span> <span class="o">/</span> <span class="n">p</span><span class="p">,</span> <span class="n">m</span> <span class="o">/</span> <span class="n">p</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><a href="https://codeforces.com/contest/1475/problem/E">1475E - Advertising Agency</a> 这题不使用lucas 30ms,使用了 15ms.</p>
-<blockquote>
-<p>Lucas 定理 <a href="https://oi-wiki.org/math/lucas/#lucas">https://oi-wiki.org/math/lucas/#lucas</a></p>
-</blockquote>
-
     </article>
     
     
@@ -4377,6 +4012,10 @@ C.UTF-8
         </li>
         
         <li>
+          <a href="/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/" class="related__link">ACM训练习题及算法</a>
+        </li>
+        
+        <li>
           <a href="/posts/regex/" class="related__link">正则表达式</a>
         </li>
         
@@ -4386,10 +4025,6 @@ C.UTF-8
         
         <li>
           <a href="/posts/questionsabouttrainingandindividualcompetitions/" class="related__link">训练赛和某场CF的一些题</a>
-        </li>
-        
-        <li>
-          <a href="/posts/basicquestionaboutmathe/" class="related__link">TrainCamp2020 数学基础</a>
         </li>
         
     </ul>
@@ -4408,6 +4043,13 @@ C.UTF-8
     
     <div class="grow"></div>
     
+      <a href="https://www.deltablog.xyz/posts/basicquestionaboutmathe/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">TrainCamp2020 数学基础</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
+    
   
 </nav>
     
@@ -4417,7 +4059,7 @@ C.UTF-8
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-02-01 00:07:10.2319853 \u002b0800 CST',
+    id: '2021-02-02 21:48:45.2365297 \u002b0800 CST',
     title: 'Coding随想拾遗与语言学习笔记',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -5562,20 +5204,6 @@ document.addEventListener('DOMContentLoaded', function () {
       </ul>
     </li>
     <li><a href="#可能是最长的c变量声明">可能是最长的C++变量声明</a></li>
-    <li><a href="#stl">STL</a>
-      <ul>
-        <li><a href="#前缀和-partial_sum---差分-adjacent_difference">前缀和 partial_sum  | 差分 adjacent_difference</a></li>
-        <li><a href="#逆序排序">逆序排序</a></li>
-        <li><a href="#阶乘-tgamma">阶乘 tgamma</a></li>
-      </ul>
-    </li>
-    <li><a href="#algorithm">Algorithm</a>
-      <ul>
-        <li><a href="#快速乘--快速幂">快速乘 | 快速幂</a></li>
-        <li><a href="#乘法逆元">乘法逆元</a></li>
-        <li><a href="#组合数">组合数</a></li>
-      </ul>
-    </li>
   </ul>
 </nav>
         </div>

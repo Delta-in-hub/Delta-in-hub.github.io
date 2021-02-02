@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 01 Feb 2021 00:07:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Feb 2021 23:52:16 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,95 @@
 
       
       <item>
+        <title>ACM训练习题及算法</title>
+        <link>https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/</link>
+        <pubDate>Tue, 02 Feb 2021 23:52:16 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Tue, 02 Feb 2021 23:52:16 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/</guid>
+        <description>ACM训练习题及算法 STL 前缀和 partial_sum | 差分 adjacent_difference 1 2 3 4 5 6 7 8 9 10 #include &amp;lt;numeric&amp;gt; vector&amp;lt;int&amp;gt; arr{1,2,3,4,5,6,7,8,9,10}; vector&amp;lt;int&amp;gt; prefix; partial_sum(arr.begin(), arr.end(), back_inserter(prefix)); adjacent_difference(arr.begin(), arr.end(), back_inserter(prefix)); //或者 prefix.resize(arr.size()); partial_sum(arr.begin(), arr.end(), prefix.begin()); adjacent_difference(arr.begin(), arr.end(), prefix.begin()); 逆序排序 1 2 3 4 5 vector&amp;lt;int&amp;gt; arr; sort(arr.begin(),arr.end(),greater&amp;lt;int&amp;gt;()) sort(arr.begin(),arr.end(),greater&amp;lt;&amp;gt;()); //C++ 14 sort(arr.rbegin(),arr.rend()); 阶乘</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+            
+              <category>ACM</category>
+            
+          
+            
+              <category>CodeForces</category>
+            
+          
+            
+              <category>OJ</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Problems</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>TrainCamp2020 数学基础</title>
+        <link>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</link>
+        <pubDate>Tue, 02 Feb 2021 23:11:34 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Tue, 02 Feb 2021 23:11:34 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</guid>
+        <description>数据基础 A - 敌兵布阵 HDU 1166 树状数组 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>Vjudge</category>
+            
+          
+            
+              <category>ACM</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>Coding随想拾遗与语言学习笔记</title>
         <link>https://www.deltablog.xyz/posts/codingthoughts/</link>
-        <pubDate>Mon, 01 Feb 2021 00:07:10 +0800</pubDate>
+        <pubDate>Tue, 02 Feb 2021 21:48:45 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Mon, 01 Feb 2021 00:07:10 +0800</atom:modified>
+        <atom:modified>Tue, 02 Feb 2021 21:48:45 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/codingthoughts/</guid>
         <description>Coding随想拾遗 有时候突然冒出一点疑问想法,查阅理解之后总觉得要找个地方把他记录一下,于是就有了这个文章. 还有许多分散着之前的文章里,找</description>
         
@@ -278,44 +362,6 @@
         <atom:modified>Wed, 09 Dec 2020 16:56:10 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/questionsabouttrainingandindividualcompetitions/</guid>
         <description>训练赛的一些题 Problem: Fibonacci Problem Description Fibonacci numbers are well-known as follow: f(x)=1 x=1 f(x)=2 x=2 f(x)=f(x-1)+f(x-2) x&amp;gt;2 Now given an integer N, please find out whether N can be represented as the sum of several Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. Input Multiple test cases, the first line is an integer T (T&amp;lt;=10000),</description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>C|C&#43;&#43;</category>
-            
-          
-        
-        
-          
-            
-              <category>Coding</category>
-            
-          
-            
-              <category>Vjudge</category>
-            
-          
-            
-              <category>ACM</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>TrainCamp2020 数学基础</title>
-        <link>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</link>
-        <pubDate>Wed, 09 Dec 2020 16:42:25 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Wed, 09 Dec 2020 16:42:25 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/basicquestionaboutmathe/</guid>
-        <description>数据基础 A - 敌兵布阵 HDU 1166 树状数组 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54</description>
         
         <dc:creator>Delta</dc:creator>
         
