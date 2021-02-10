@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 14:52:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Feb 2021 22:51:22 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,9 +25,9 @@
       <item>
         <title>重学C&#43;&#43;</title>
         <link>https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c&#43;&#43;/</link>
-        <pubDate>Tue, 26 Jan 2021 14:52:57 +0800</pubDate>
+        <pubDate>Wed, 10 Feb 2021 22:51:22 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Tue, 26 Jan 2021 14:52:57 +0800</atom:modified>
+        <atom:modified>Wed, 10 Feb 2021 22:51:22 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c&#43;&#43;/</guid>
         <description>重学C++ C++ Primer 5th 现代 C++ 教程：高速上手 C++11/14/17/20 学习书籍资料如上 + Google It static / inline static inline 顶层/底层const 简单说，顶层const是指“指针本身是常量”，而底</description>
         

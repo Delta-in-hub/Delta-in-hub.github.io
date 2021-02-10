@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="C|C&#43;&#43;,CPP,Stackoverflow,CppReference">
 
-<meta name="created" content="2021-01-26T14:52:57&#43;0800">
-<meta name="modified" content="2021-01-26T14:52:57&#43;0800">
-<meta property="article:published_time" content="2021-01-26T14:52:57&#43;0800">
+<meta name="created" content="2021-02-10T22:51:22&#43;0800">
+<meta name="modified" content="2021-02-10T22:51:22&#43;0800">
+<meta property="article:published_time" content="2021-02-10T22:51:22&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,8 +1377,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "重学C++",
-    "datePublished": "2021-01-26T14:52:57+08:00",
-    "dateModified": "2021-01-26T14:52:57+08:00",
+    "datePublished": "2021-02-10T22:51:22+08:00",
+    "dateModified": "2021-02-10T22:51:22+08:00",
     "url" : "https://www.deltablog.xyz/posts/%E9%87%8D%E5%AD%A6c++/",
     "description": "重学C++ C++ Primer 5th 现代 C++ 教程：高速上手 C++11/14/17/20 学习书籍资料如上 + Google It static / inline static inline 顶层/底层const 简单说，顶层const是指“指针本身是常量”，而底",
     "keywords": ["C|C++","CPP","Stackoverflow","CppReference"],
@@ -1722,9 +1722,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月26日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年02月10日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;13&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;14&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -2674,6 +2674,109 @@ destruct: 1         // 程序结束，析构变量 aa
 </div>
 </div><p>Use auto when you want to return a prvalue, and decltype(auto) when you want to forward the returned expression preserving its value category.</p>
 <p>使用的是<code>decltype</code>的推导规则,保持原有值类型与CV限定符.</p>
+<h2 id="数组">数组</h2>
+<h3 id="数组名和指针">数组名和指针</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="n">arr</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>    <span class="c1">//int [10]    长度为10的存有int的数组
+</span><span class="c1"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="o">&amp;</span><span class="n">arr</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>   <span class="c1">//int (*) [10] 指向(长度为10的存有int的数组)的指针
+</span><span class="c1"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="o">&amp;</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span><span class="c1">//int*
+</span><span class="c1"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39; &#39;</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="o">*&amp;</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39; &#39;</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="o">&amp;</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39; &#39;</span> <span class="o">&lt;&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="o">&amp;</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="cm">/*
+</span><span class="cm">A10_i
+</span><span class="cm">PA10_i
+</span><span class="cm">Pi
+</span><span class="cm">40 40 8 8
+</span><span class="cm">*/</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>数组是数组,指针是指针,这是两个东西,只不过大多时候数组转化为指针.<br />
+就像有<strong>指向整型</strong>的指针,也有<strong>指向整型数组</strong>的指针.</p>
+<p><code>assert(&amp;arr == arr)</code>默认情况下,C编译器会给你警告,C++编译器会报错,因为他们的类型不同,且没有对应的隐式类型转换,即<code>A_i</code>不能隐式类型转换为<code>PA_i</code>.</p>
+<p><code>assert(&amp;arr[0] == arr)</code>为真,因为<code>A10_i</code>可以隐式类型转化为<code>Pi</code> .</p>
+<p><code>assert((void*)(arr) == (void*)(&amp;arr))</code>对他们进行类型转换之后,断言为真</p>
+<p><code>int (*parr)[10] = &amp;arr;</code>,你可以使用<code>p[]</code>去修改它所指向的数组中的内容,这是因为虽然<code>parr</code>和<code>arr</code>的类型不同,但是他们的地址是一样,而<code>operator[]</code>是通过地址偏移得到的,这两者偏移得到的地址相同.</p>
+<p>此外,数组(内置数组,非<code>std::array</code>)不允许拷贝,赋值,比如<code>int barr[10] = arr</code>或者<code>int barr[10]; barr = arr; </code>在标准中都是错误的.</p>
+<p>因此,数组若是作为参数进行值传递,不得不类型转化为指针(也就是&quot;退化&quot;),虽然类型变了,但是用起来一样(除了<code>sizeof</code>).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">parr</span><span class="p">[])</span> <span class="c1">//int *parr / int parr[10] 都是一样的
+</span><span class="c1"></span><span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="n">parr</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="o">*</span><span class="n">parr</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">foo</span><span class="p">(</span><span class="n">arr</span><span class="p">);</span>
+<span class="c1">//Pi              
+</span><span class="c1">//i
+</span><span class="c1">//本来arr是int [10],传参数时候隐式类型转换成了int *  A10_i -&gt; P_i
+</span><span class="c1"></span>
+<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">parr</span><span class="p">)[])</span>
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="n">parr</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="o">*</span><span class="n">parr</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//foo(arr);  //c++中报错,原因见上文assert部分
+</span><span class="c1"></span><span class="n">foo</span><span class="p">(</span><span class="o">&amp;</span><span class="n">arr</span><span class="p">);</span>
+<span class="c1">//PA_i
+</span><span class="c1">//A_i
+</span><span class="c1">//这里丢失了数组大小的信息,若要保留需要手动指明,参数改为  int (*parr)[10]
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="理解复杂的数组声明">理解复杂的数组声明</h3>
+<p>默认类型修饰符从右到左依次绑定</p>
+<p>从内到外理解</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="o">*</span><span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span> <span class="err">存整数指针的数组</span>
+<span class="c1">//int &amp;arr[10]; //数组中不允许存引用
+</span><span class="c1"></span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">arr</span><span class="p">)[</span><span class="mi">10</span><span class="p">];</span> <span class="c1">//arr是指针,指向int [10]的指针
+</span><span class="c1"></span><span class="kt">int</span> <span class="o">*</span><span class="p">(</span><span class="o">&amp;</span><span class="n">arr</span><span class="p">)[</span><span class="mi">10</span><span class="p">];</span> <span class="c1">//arr是引用,是int* [10]的别名
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="高维数组">高维数组</h3>
+<p>Something</p>
 
     </article>
     
@@ -2907,21 +3010,14 @@ destruct: 1         // 程序结束，析构变量 aa
 <nav class="pagination-single">
   
     
-      <a href="https://www.deltablog.xyz/posts/datastructure/" class="pagination-single__left">
+      <a href="https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">数据结构的学习</div>      
+        <div class="pagination-single__left-title">ACM训练习题及算法</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://www.deltablog.xyz/posts/codingthoughts/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Coding随想拾遗与语言学习笔记</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2932,7 +3028,7 @@ destruct: 1         // 程序结束，析构变量 aa
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-01-26 14:52:57.6744774 \u002b0800 CST',
+    id: '2021-02-10 22:51:22.2226867 \u002b0800 CST',
     title: '重学C\u002b\u002b',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -4069,6 +4165,13 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#auto"><strong>auto</strong></a></li>
         <li><a href="#decltype"><strong>decltype</strong></a></li>
         <li><a href="#decltypeauto">decltype(auto)</a></li>
+      </ul>
+    </li>
+    <li><a href="#数组">数组</a>
+      <ul>
+        <li><a href="#数组名和指针">数组名和指针</a></li>
+        <li><a href="#理解复杂的数组声明">理解复杂的数组声明</a></li>
+        <li><a href="#高维数组">高维数组</a></li>
       </ul>
     </li>
   </ul>
