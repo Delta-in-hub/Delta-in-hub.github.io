@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Compiler on Delta&#39;s Blog</title>
+    <link>https://www.deltablog.xyz/categories/compiler/</link>
+    <description>Recent content in Compiler on Delta&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
+    <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 01 Mar 2021 10:34:24 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.deltablog.xyz/categories/compiler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>编译原理</title>
+        <link>https://www.deltablog.xyz/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Mon, 01 Mar 2021 10:34:24 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
+        <description>编译原理 1 基本概念 Compiler vs Interpreter https://www.youtube.com/watch?v=e4ax90XmUBc 编译器前端 词法分析(lexical analysis or scanning) 语法分析(syntax analysis or parsing) 语义分析(semantic analysis) 编译器后端 生成中间</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>编译原理</category>
+            
+          
+            
+              <category>Algorithm</category>
+            
+          
+            
+              <category>Compiler</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -14,13 +14,55 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 15 Jan 2021 14:18:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 10:34:24 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>编译原理</title>
+        <link>https://www.deltablog.xyz/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        <atom:modified>Mon, 01 Mar 2021 10:34:24 +0800</atom:modified>
+        <guid>https://www.deltablog.xyz/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
+        <description>编译原理 1 基本概念 Compiler vs Interpreter https://www.youtube.com/watch?v=e4ax90XmUBc 编译器前端 词法分析(lexical analysis or scanning) 语法分析(syntax analysis or parsing) 语义分析(semantic analysis) 编译器后端 生成中间</description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C|C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+              <category>Coding</category>
+            
+          
+            
+              <category>编译原理</category>
+            
+          
+            
+              <category>Algorithm</category>
+            
+          
+            
+              <category>Compiler</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>数据结构的学习</title>

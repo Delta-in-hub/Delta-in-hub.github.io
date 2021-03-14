@@ -14,13 +14,67 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 19 Feb 2021 20:44:27 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Mar 2021 21:17:31 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Git</title>
+        <link>https://www.deltablog.xyz/tags/git/</link>
+        <pubDate>Sun, 14 Mar 2021 21:17:31 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/git/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Github</title>
+        <link>https://www.deltablog.xyz/tags/github/</link>
+        <pubDate>Sun, 14 Mar 2021 21:17:31 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/github/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>C|C&#43;&#43;</title>
+        <link>https://www.deltablog.xyz/tags/cc&#43;&#43;/</link>
+        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/tags/cc&#43;&#43;/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>ACM</title>
@@ -47,24 +101,6 @@
         <author>clayton.zhang@foxmail.com (Delta)</author>
         
         <guid>https://www.deltablog.xyz/tags/codeforces/</guid>
-        <description></description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>C|C&#43;&#43;</title>
-        <link>https://www.deltablog.xyz/tags/cc&#43;&#43;/</link>
-        <pubDate>Fri, 19 Feb 2021 20:44:27 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        
-        <guid>https://www.deltablog.xyz/tags/cc&#43;&#43;/</guid>
         <description></description>
         
         <dc:creator>Delta</dc:creator>
