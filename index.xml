@@ -46,9 +46,9 @@
       <item>
         <title>Git入门与实践</title>
         <link>https://www.deltablog.xyz/posts/git%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5/</link>
-        <pubDate>Wed, 17 Mar 2021 23:05:18 +0800</pubDate>
+        <pubDate>Wed, 17 Mar 2021 23:11:10 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Wed, 17 Mar 2021 23:05:18 +0800</atom:modified>
+        <atom:modified>Wed, 17 Mar 2021 23:11:10 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/git%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5/</guid>
         <description>Git入门与基本命令 https://cloud.tencent.com/developer/doc/1096 中文版Git文档 https://git-scm.com/docs Git 配置 配置层级 Git的配置分为三个层级,从高到低依次为 系统上每一个用户及他们仓库的通用配置 --system 只针对当</description>
         
