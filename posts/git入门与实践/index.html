@@ -1328,9 +1328,9 @@
 
 <meta name="keywords" content="Git,Github">
 
-<meta name="created" content="2021-03-16T23:25:20&#43;0800">
-<meta name="modified" content="2021-03-16T23:25:20&#43;0800">
-<meta property="article:published_time" content="2021-03-16T23:25:20&#43;0800">
+<meta name="created" content="2021-03-17T23:05:18&#43;0800">
+<meta name="modified" content="2021-03-17T23:05:18&#43;0800">
+<meta property="article:published_time" content="2021-03-17T23:05:18&#43;0800">
 
 <meta name="author" content="Delta">
 
@@ -1377,10 +1377,10 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "Git入门与实践",
-    "datePublished": "2021-03-16T23:25:20+08:00",
-    "dateModified": "2021-03-16T23:25:20+08:00",
+    "datePublished": "2021-03-17T23:05:18+08:00",
+    "dateModified": "2021-03-17T23:05:18+08:00",
     "url" : "https://www.deltablog.xyz/posts/git%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5/",
-    "description": "Git入门与实践 Git 配置 https://git-scm.com/docs 配置层级 Git的配置分为三个层级,从高到低依次为 系统上每一个用户及他们仓库的通用配置 --system 只针对当前用户 --global 当前使用仓库的",
+    "description": "Git入门与基本命令 https://cloud.tencent.com/developer/doc/1096 中文版Git文档 https://git-scm.com/docs Git 配置 配置层级 Git的配置分为三个层级,从高到低依次为 系统上每一个用户及他们仓库的通用配置 --system 只针对当",
     "keywords": ["Git","Github"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1722,9 +1722,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年03月16日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年03月17日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;6&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;7&nbsp;分钟 </span>
   
   <span class="single__info">
     
@@ -1746,12 +1746,13 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h1 id="git入门与实践">Git入门与实践</h1>
-<h2 id="git-配置">Git 配置</h2>
+      <h1 id="git入门与基本命令">Git入门与基本命令</h1>
 <blockquote>
+<p><a href="https://cloud.tencent.com/developer/doc/1096">https://cloud.tencent.com/developer/doc/1096</a> <br />
+中文版Git文档</p>
 <p><a href="https://git-scm.com/docs">https://git-scm.com/docs</a></p>
-  <Pro Git> 
 </blockquote>
+<h2 id="git-配置">Git 配置</h2>
 <h3 id="配置层级">配置层级</h3>
 <p>Git的配置分为三个层级,从高到低依次为</p>
 <ol>
@@ -1922,7 +1923,7 @@ $ git config --global user.email <span class="s2">&#34;your_email@example.com&#3
 <li><code>-a</code> 等于 <code>git add -u</code> 然后<code>git commit</code></li>
 <li><code>-C &lt;commit&gt;</code> 使用已经存在的commit中的<msg>,作者,时间作为本次提交的信息.</li>
 <li><code>-c &lt;commit&gt;</code>  和<code>-C</code>类似,但是会调用编辑器编辑<msg></li>
-<li><code>--amend</code>  使用与当前提交相同的父节点进行一次新提交，旧的提交会被取消,所以commit-id会变. 从效果上来说，就像是旧有的提交从未存在过一样，它并不会出现在仓库的历史中。大致等同于如下操作</li>
+<li><code>--amend</code>  使用与当前提交相同的父节点进行一次新提交，旧的提交会被取消,所以commit-id会变. 从效果上来说，就像是旧有的提交从未存在过一样，它并不会出现在仓库的历史中。这个命令会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改（例如，在上次提交后马上执行了此命令）， 那么快照会保持不变，而你所修改的只是提交信息。大致等同于如下操作. gi</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1956,7 +1957,7 @@ $ git commit -c ORIG_HEAD
 </li>
 <li><code>--hard</code> 更改HEAD及其所指的branch,并将文件恢复到暂存区和工作目录
 <ul>
-<li>等于 <code>git reset --soft &lt;commit&gt;</code> <code>git restore --staged --worktree</code></li>
+<li>等于 <code>git reset --soft &lt;commit&gt;</code> <code>git restore . --staged --worktree</code></li>
 <li>Any changes to tracked files in the working tree since <commit> are discarded.</li>
 </ul>
 </li>
@@ -1972,7 +1973,7 @@ $ git commit -c ORIG_HEAD
 </blockquote>
 <p>当带文件参数的时候,情况不同.</p>
 <p><code>git reset [-q] [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;</code></p>
-<p>他不会影响 current branch head ,仅仅将文件<code>&lt;pathspec&gt;</code> 从<code>[&lt;tree-ish&gt;]</code>(默认是HEAD)恢复到工作区.</p>
+<p>他不会影响 current branch head ,仅仅将文件<code>&lt;pathspec&gt;</code> 从<code>[&lt;tree-ish&gt;]</code>(默认是HEAD)恢复到暂存区.</p>
 <p>This means that <code>git reset </code> is the opposite of <code>git add </code>. This command is equivalent to <code>git restore &lt;pathspec&gt; [--source=&lt;tree-ish&gt;] --staged </code>.</p>
 <h4 id="什么是head">什么是HEAD</h4>
 <p>HEAD 是当前分支引用的指针，它总是指向该分支上的最后一次提交。 这表示 HEAD 将是下一次提交的父结点。 通常，理解 HEAD 的最简方式，就是将它看做 该分支上的最后一次提交 的快照。</p>
@@ -2013,6 +2014,7 @@ $ git commit -c ORIG_HEAD
 <li><code>-v</code> 查看每一个分支的最后一次提交</li>
 <li><code>--merged</code> 与 <code>--no-merged </code>这两个有用的选项可以过滤这个列表中已经合并或尚未合并到当前分支的分支</li>
 <li><code>-d &lt;name&gt;</code> 删除分支</li>
+<li><code>-m &lt;newbranch&gt;</code> 将branch改名为<newbranch></li>
 <li><code>git branch &lt;name&gt;</code>
 <ul>
 <li>创建一个名为<name>的分支指向当前HEAD, 但不会切换HEAD到新的分支上</li>
@@ -2081,6 +2083,11 @@ $ git commit -c ORIG_HEAD
 <li><code>rm &lt;主机名&gt;</code></li>
 <li><code>rename &lt;原主机名&gt; &lt;新主机名&gt;</code></li>
 </ul>
+<h3 id="git-fetch"><code>git fetch</code></h3>
+<p>从远程更新远程仓库状态,不会影响本地,不会与本地分支合并.</p>
+<h3 id="git-pull"><code>git pull</code></h3>
+<p><code>git fetch</code>+ <code>git merge</code></p>
+<h3 id="git-push"><code>git push</code></h3>
 
     </article>
     
@@ -2301,7 +2308,7 @@ $ git commit -c ORIG_HEAD
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
 <script>
   var gitalk = new Gitalk({
-    id: '2021-03-16 23:25:20.0501184 \u002b0800 CST',
+    id: '2021-03-17 23:05:18.4916463 \u002b0800 CST',
     title: 'Git入门与实践',
     clientID: '2bbde3552a724785e1db',
     clientSecret: 'efc252e69ff3b15d10ed1c19039ff7f141935b2f',
@@ -3446,6 +3453,9 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#sharing-and-updating-projects">Sharing and Updating Projects</a>
       <ul>
         <li><a href="#git-remote"><code>git remote</code></a></li>
+        <li><a href="#git-fetch"><code>git fetch</code></a></li>
+        <li><a href="#git-pull"><code>git pull</code></a></li>
+        <li><a href="#git-push"><code>git push</code></a></li>
       </ul>
     </li>
   </ul>
