@@ -57,48 +57,6 @@
       </item>
       
       <item>
-        <title>编译原理</title>
-        <link>https://www.deltablog.xyz/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
-        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Mon, 01 Mar 2021 10:34:24 +0800</atom:modified>
-        <guid>https://www.deltablog.xyz/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
-        <description>编译原理 1 基本概念 Compiler vs Interpreter https://www.youtube.com/watch?v=e4ax90XmUBc 编译器前端 词法分析(lexical analysis or scanning) 语法分析(syntax analysis or parsing) 语义分析(semantic analysis) 编译器后端 生成中间</description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>C|C&#43;&#43;</category>
-            
-          
-        
-        
-          
-            
-              <category>Coding</category>
-            
-          
-            
-              <category>编译原理</category>
-            
-          
-            
-              <category>Algorithm</category>
-            
-          
-            
-              <category>Compiler</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
         <title>ACM训练习题及算法</title>
         <link>https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/</link>
         <pubDate>Fri, 19 Feb 2021 20:44:27 +0800</pubDate>

@@ -41,60 +41,6 @@
       </item>
       
       <item>
-        <title>Algorithm</title>
-        <link>https://www.deltablog.xyz/categories/algorithm/</link>
-        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        
-        <guid>https://www.deltablog.xyz/categories/algorithm/</guid>
-        <description></description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Compiler</title>
-        <link>https://www.deltablog.xyz/categories/compiler/</link>
-        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        
-        <guid>https://www.deltablog.xyz/categories/compiler/</guid>
-        <description></description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>编译原理</title>
-        <link>https://www.deltablog.xyz/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
-        <pubDate>Mon, 01 Mar 2021 10:34:24 +0800</pubDate>
-        <author>clayton.zhang@foxmail.com (Delta)</author>
-        
-        <guid>https://www.deltablog.xyz/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
-        <description></description>
-        
-        <dc:creator>Delta</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>Problems</title>
         <link>https://www.deltablog.xyz/categories/problems/</link>
         <pubDate>Fri, 19 Feb 2021 20:44:27 +0800</pubDate>
@@ -137,6 +83,24 @@
         <author>clayton.zhang@foxmail.com (Delta)</author>
         
         <guid>https://www.deltablog.xyz/categories/vjudge/</guid>
+        <description></description>
+        
+        <dc:creator>Delta</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Algorithm</title>
+        <link>https://www.deltablog.xyz/categories/algorithm/</link>
+        <pubDate>Fri, 15 Jan 2021 14:18:25 +0800</pubDate>
+        <author>clayton.zhang@foxmail.com (Delta)</author>
+        
+        <guid>https://www.deltablog.xyz/categories/algorithm/</guid>
         <description></description>
         
         <dc:creator>Delta</dc:creator>
