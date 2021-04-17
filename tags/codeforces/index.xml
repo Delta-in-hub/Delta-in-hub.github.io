@@ -14,7 +14,7 @@
     <managingEditor>clayton.zhang@foxmail.com (Delta)</managingEditor>
     <webMaster>clayton.zhang@foxmail.com (Delta)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 17 Apr 2021 19:50:51 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Apr 2021 19:51:52 +0800</lastBuildDate>
     
         <atom:link href="https://www.deltablog.xyz/tags/codeforces/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,9 +25,9 @@
       <item>
         <title>ACM训练习题及算法</title>
         <link>https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/</link>
-        <pubDate>Sat, 17 Apr 2021 19:50:51 +0800</pubDate>
+        <pubDate>Sat, 17 Apr 2021 19:51:52 +0800</pubDate>
         <author>clayton.zhang@foxmail.com (Delta)</author>
-        <atom:modified>Sat, 17 Apr 2021 19:50:51 +0800</atom:modified>
+        <atom:modified>Sat, 17 Apr 2021 19:51:52 +0800</atom:modified>
         <guid>https://www.deltablog.xyz/posts/%E8%AE%AD%E7%BB%83%E7%9A%84%E9%A2%98/</guid>
         <description>ACM训练习题及算法 STL 前缀和 partial_sum | 差分 adjacent_difference 1 2 3 4 5 6 7 8 9 10 #include &amp;lt;numeric&amp;gt; vector&amp;lt;int&amp;gt; arr{1,2,3,4,5,6,7,8,9,10}; vector&amp;lt;int&amp;gt; prefix; partial_sum(arr.begin(), arr.end(), back_inserter(prefix)); adjacent_difference(arr.begin(), arr.end(), back_inserter(prefix)); //或者 prefix.resize(arr.size()); partial_sum(arr.begin(), arr.end(), prefix.begin()); adjacent_difference(arr.begin(), arr.end(), prefix.begin()); 逆序排序 1 2 3 4 5 vector&amp;lt;int&amp;gt; arr; sort(arr.begin(),arr.end(),greater&amp;lt;int&amp;gt;()) sort(arr.begin(),arr.end(),greater&amp;lt;&amp;gt;()); //C++ 14 sort(arr.rbegin(),arr.rend()); 阶乘</description>
         
