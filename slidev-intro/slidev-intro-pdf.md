@@ -392,3 +392,10 @@ themeConfig:
 ```
 
 以及删除所有`<Footnotes >...`
+
+```bash
+npx slidev build slide.md --base=""
+npx slidev export slide-pdf.md
+
+# 生成的pdf放到 dist 文件夹并重命名为 slidev-exported.pdf
+```
